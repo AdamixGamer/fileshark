@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, redirect, url_for
-import os
+import os, signal
+from pathlib import Path
 
 app = Flask(__name__)
-fileiconlist = ["py","txt","md"]
+fileicons = ["bat","cpp","db","exe","iso","jar","jpg","md","png","py","rs","tiff","txt"]
+
 #todo:
 # plik konfiguracyjny
 # podgląd plików
@@ -15,7 +17,7 @@ def index():
     path = '.'
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
-    
+    print(os.stat("README.md"))
     
     listed = os.listdir(path)
     
@@ -25,3 +27,8 @@ def index():
         dirs = [".."] + dirs
 
     return render_template("index.html",path=path, files=files, dirs=dirs)
+
+@app.route("/serverstop")
+def serverstop():
+    os.kill(os.getpid())
+    print("Server stopped")
