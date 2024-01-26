@@ -1,22 +1,25 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os, signal
-from pathlib import Path
+import config
 
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
-fileicons = ["bat","cpp","db","exe","iso","jar","jpg","md","png","py","rs","tiff","txt","html","unknown"]
+
+
+
+
 
 #todo:
 # plik konfiguracyjny
 # podgląd plików
 # pobieranie
 # wgrywanie
-#ikony zalezne od typu pliku
+# wiecej ikon dla formatów plików
 
 @app.route("/")
 def index():
-    path = '.'
+    path = config.defaultdir
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
     listed = os.listdir(path)
@@ -33,9 +36,16 @@ def index():
     dirs = [file for file in listed if os.path.isdir(file)]
     if os.access(path + "/..", os.X_OK):
         dirs = [".."] + dirs
-    return render_template("index.html",path=path, files=files, dirs=dirs,fileicons=fileicons)
+    return render_template("index.html",path=path, files=files, dirs=dirs,fileicons=config.fileicons,enableserverstop=config.enableserverstop)
 
 @app.route("/serverstop")
 def serverstop():
-    os.kill(os.getpid())
-    print("Server stopped")
+    if config.enableserverstop:
+        print("Server stopped")
+        os.kill(os.getpid(), signal.SIGTERM)
+    else:
+        return redirect("/")
+
+@app.route("/settings")
+def settings():
+    return render_template("settings.html")

@@ -1,31 +1,46 @@
 <html>
-<head>
-  <title>Pliki</title>
-</head>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pliki</title>
+  </head>
 
-<body>
-  <h1>Ścieżka: "{{path}}"</h1>
-  <table>
-    {% for dir in dirs%}
-    <tr>
-      <td><img src="static/dir.png" width="20px" height="20px" /></td>
-      <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
-    </tr>
-    {%endfor%}
-    {% for file in files%}
-    <tr>
-      {%for icon in fileicons%}
-      {%if icon == file[0]%}
-      <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
-      {%break%}
-      {%elif icon == "unknown"%}
-      <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
-      {%endif%}
+  <body>
+    <h2>Ścieżka: "{{path}}"</h2>
+    <table>
+      {% for dir in dirs%}
+      <tr>
+        <td><img src="static/dir.png" width="20px" height="20px" /></td>
+        <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
+      </tr>
+      {%endfor%} {% for file in files%}
+      <tr>
+        {%for icon in fileicons%} {%if icon == file[0]%}
+        <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
+        {%break%} {%elif icon == "unknown"%}
+        <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
+        {%endif%} {%endfor%}
+        <td>{{file[1]}}</td>
+      </tr>
       {%endfor%}
-      <td>{{file[1]}}</td>
-    </tr>
-    {%endfor%}
-  </table>
-</body>
-
+    </table>
+    <form action="{{url_for('serverstop')}}">
+      <input
+        style="position: absolute; right: 0%; bottom: 97.05%"
+        type="submit"
+        {%if
+        enableserverstop%}
+        value="Zatrzymaj Serwer"
+        {%else%}
+        value="Zatrzymaj Serwer (Disabled)"
+        {%endif%}
+      />
+    </form>
+    <form action="{{url_for('settings')}}">
+      <input
+        style="position: absolute; right: 0%; bottom: 0%"
+        type="submit"
+        value="Settings"
+      />
+    </form>
+  </body>
 </html>
