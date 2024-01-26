@@ -3,7 +3,9 @@ import os, signal
 from pathlib import Path
 
 app = Flask(__name__)
-fileicons = ["bat","cpp","db","exe","iso","jar","jpg","md","png","py","rs","tiff","txt"]
+app.jinja_env.add_extension('jinja2.ext.loopcontrols')
+
+fileicons = ["bat","cpp","db","exe","iso","jar","jpg","md","png","py","rs","tiff","txt","html","unknown"]
 
 #todo:
 # plik konfiguracyjny
@@ -17,16 +19,21 @@ def index():
     path = '.'
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
-    print(os.stat("README.md"))
-    
     listed = os.listdir(path)
-    
-    files = [file for file in listed if not os.path.isdir(file)]
+
+    noextensionfiles = [file for file in listed if not os.path.isdir(file)]
+    files = []
+    try:
+        for file in noextensionfiles:
+            files.append([file.rsplit(".",1)[1],file ])
+    except:
+        files.append(["err","Cannot load the directory"])
+        print("error")
+
     dirs = [file for file in listed if os.path.isdir(file)]
     if os.access(path + "/..", os.X_OK):
         dirs = [".."] + dirs
-
-    return render_template("index.html",path=path, files=files, dirs=dirs)
+    return render_template("index.html",path=path, files=files, dirs=dirs,fileicons=fileicons)
 
 @app.route("/serverstop")
 def serverstop():

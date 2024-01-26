@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title>Pliki</title>
 </head>
@@ -15,12 +14,15 @@
     {%endfor%}
     {% for file in files%}
     <tr>
-      {%if file=="README.md"%}
-      <td><img src="static/md.png" width="20px" height="20px" /></td>
-      {%else%}
-      <td><img src="static/file.png" width="20px" height="20px" /></td>
+      {%for icon in fileicons%}
+      {%if icon == file[0]%}
+      <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
+      {%break%}
+      {%elif icon == "unknown"%}
+      <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
       {%endif%}
-      <td>{{file}}</td>
+      {%endfor%}
+      <td>{{file[1]}}</td>
     </tr>
     {%endfor%}
   </table>
