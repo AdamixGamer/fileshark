@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <title>Pliki</title>
+</head>
+
+<body>
+  <h1>Ścieżka: "{{path}}"</h1>
+  <table>
+    {% for dir in dirs%}
+    <tr>
+      <td><img src="static/dir.png" width="20px" height="20px" /></td>
+      <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
+    </tr>
+    {%endfor%}
+    {% for file in files%}
+    <tr>
+      {%if file=="README.md"%}
+      <td><img src="static/md.png" width="20px" height="20px" /></td>
+      {%else%}
+      <td><img src="static/file.png" width="20px" height="20px" /></td>
+      {%endif%}
+      <td>{{file}}</td>
+    </tr>
+    {%endfor%}
+  </table>
+</body>
+
+</html>
