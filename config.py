@@ -23,6 +23,9 @@ fileicons = [
     "tiff",
     "txt",
     "html",
+
+    
+    "err",
     "unknown"
     ]
 

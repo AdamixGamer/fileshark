@@ -20,6 +20,20 @@
         <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
         {%endif%} {%endfor%}
         <td>{{file[1]}}</td>
+        <td>
+          <form action="{{url_for('download')}}">
+            <input
+              type="hidden"
+              name="file"
+              value="{{file[1]}}"
+            />
+            <input
+              type="hidden"
+              name="path"
+              value="{{path}}"
+            /><input type="submit" value="Download" />
+          </form>
+        </td>
       </tr>
       {%endfor%}
     </table>

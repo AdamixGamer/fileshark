@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for,send_from_directory
 import os, signal
 import config
 
@@ -11,9 +11,8 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
 #todo:
-# plik konfiguracyjny
 # podgląd plików
-# pobieranie
+# pobieranie (naprawic plik .txt)
 # wgrywanie
 # wiecej ikon dla formatów plików
 
@@ -30,7 +29,7 @@ def index():
         for file in noextensionfiles:
             files.append([file.rsplit(".",1)[1],file ])
     except:
-        files.append(["err","Cannot load the directory"])
+        files.append(["err","Cannot load the directory or the file"])
         print("error")
 
     dirs = [file for file in listed if os.path.isdir(file)]
@@ -49,3 +48,9 @@ def serverstop():
 @app.route("/settings")
 def settings():
     return render_template("settings.html")
+
+@app.route("/download")
+def download():
+    file = request.args["file"]
+    path = request.args["path"]
+    return send_from_directory(path,file)
