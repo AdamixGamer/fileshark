@@ -1,10 +1,13 @@
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="template/styles.css" />
     <title>Pliki</title>
   </head>
 
   <body>
+    {%if alert!=""%}
+    <script>alert("{{alert}}")</script>
+    {%endif%}
     <h2>Ścieżka: "{{path}}"</h2>
     <table>
       {% for dir in dirs%}
@@ -34,6 +37,25 @@
             /><input type="submit" value="Download" />
           </form>
         </td>
+        <td>
+          <form action="{{url_for('delete')}}">
+            <input
+              type="hidden"
+              name="file"
+              value="{{file[1]}}"
+            />
+            <input
+              type="hidden"
+              name="path"
+              value="{{path}}"
+            /><input type="submit" {%if
+              enabledelete%}
+              value="Delete"
+              {%else%}
+              value="Delete (Disabled)"
+              {%endif%} />
+          </form>
+        </td>
       </tr>
       {%endfor%}
     </table>
@@ -55,6 +77,18 @@
         type="submit"
         value="Settings"
       />
+    </form>
+    <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file"
+      style="position: absolute; right: 97,5%; bottom: 5%">
+      <input
+              type="hidden"
+              name="path"
+              value="{{path}}"
+            />
+      <input type="submit" value="Upload"
+      style="position: absolute; right: 97,5%; bottom: 2,5%"
+      >
     </form>
   </body>
 </html>
