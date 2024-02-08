@@ -24,7 +24,7 @@ logged = False
 def index(alert = "",path=""):
     global logged
     if not logged: #not logged
-        return render_template("login.html")
+        return render_template("login.html",alert="Please login to access the website")
     if path=="":
         path = config.defaultdir
     if "path" in request.args:
@@ -64,10 +64,11 @@ def settings():
 def download():
     file = request.args["file"]
     path = request.args["path"]
+    asattachment = request.args["attachment"]
     try:
-        return send_from_directory(path,file, as_attachment=True)
+        return send_from_directory(path,file, as_attachment=asattachment)
     except:
-        return index("Error. File cannot be downloaded")
+        return index("Error. File cannot be downloaded or opened")
 
 @app.route('/upload', methods=['POST'])
 def upload():
@@ -91,20 +92,22 @@ def delete():
     return index()
 
 @app.route("/login", methods=['POST'])
-def login():
+def login(alert=""):
     username = request.form["login"]
     password = request.form["password"]
-    print(username + " " + password)
     hashes = sqlite3.connect("db/hashes.db")
     command = "select * from hashes where hashes.username = '" + username + "'"
     hashed = hashes.execute(command).fetchall()
-    print(hashed[0][1])
+    if len(hashed) == 0:
+        return render_template("login.html",alert="Username does not exist in the database")
+
     if bcrypt.checkpw(password.encode('utf-8'), hashed[0][1].encode('utf-8')):
         global logged
         logged = True
         print("logged")
         return index()
-    return render_template("login.html")
+
+    return render_template("login.html",alert="Username or password is not correct. Please try again")
     
 
 def databasecreation():

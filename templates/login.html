@@ -3,6 +3,11 @@
         <title>Login</title>
     </head>
     <body>
+      {%if alert!=""%}
+    <script>
+      alert("{{alert}}");
+    </script>
+    {%endif%}
         <form action="{{url_for('login')}}" method="post">
             <fieldset style="background: #f6f8ff; border: 2px solid #4238ca;">
               <legend>Login</legend>
