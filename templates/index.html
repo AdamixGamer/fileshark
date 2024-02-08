@@ -6,7 +6,9 @@
 
   <body>
     {%if alert!=""%}
-    <script>alert("{{alert}}")</script>
+    <script>
+      alert("{{alert}}");
+    </script>
     {%endif%}
     <h2>Ścieżka: "{{path}}"</h2>
     <table>
@@ -25,35 +27,25 @@
         <td>{{file[1]}}</td>
         <td>
           <form action="{{url_for('download')}}">
-            <input
-              type="hidden"
-              name="file"
-              value="{{file[1]}}"
+            <input type="hidden" name="file" value="{{file[1]}}" />
+            <input type="hidden" name="path" value="{{path}}" /><input
+              type="submit"
+              value="Download"
             />
-            <input
-              type="hidden"
-              name="path"
-              value="{{path}}"
-            /><input type="submit" value="Download" />
           </form>
         </td>
         <td>
           <form action="{{url_for('delete')}}">
-            <input
-              type="hidden"
-              name="file"
-              value="{{file[1]}}"
-            />
-            <input
-              type="hidden"
-              name="path"
-              value="{{path}}"
-            /><input type="submit" {%if
+            <input type="hidden" name="file" value="{{file[1]}}" />
+            <input type="hidden" name="path" value="{{path}}" /><input
+              type="submit"
+              {%if
               enabledelete%}
               value="Delete"
               {%else%}
               value="Delete (Disabled)"
-              {%endif%} />
+              {%endif%}
+            />
           </form>
         </td>
       </tr>
@@ -78,17 +70,23 @@
         value="Settings"
       />
     </form>
-    <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
-      <input type="file" name="file"
-      style="position: absolute; right: 97,5%; bottom: 5%">
+    <form
+      action="{{url_for('upload')}}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
       <input
-              type="hidden"
-              name="path"
-              value="{{path}}"
-            />
-      <input type="submit" value="Upload"
-      style="position: absolute; right: 97,5%; bottom: 2,5%"
-      >
+        type="file"
+        name="file"
+        style="position: absolute; right: 97, 5%; bottom: 5%"
+      />
+
+      <input
+        type="submit"
+        value="Upload"
+        style="position: absolute; right: 97, 5%; bottom: 2, 5%"
+      />
+      <input type="hidden" name="path" value="{{path}}" />
     </form>
   </body>
 </html>
