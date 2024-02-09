@@ -10,7 +10,6 @@ app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
-
 # https://flask.palletsprojects.com/en/2.2.x/patterns/fileuploads/
 
 
@@ -35,6 +34,8 @@ def index(alert = "",path=""):
 
     noextensionfiles = [file for file in listed if not os.path.isdir(file)]
     files = []
+    print(listed)
+    print(noextensionfiles)
     try:
         for file in noextensionfiles:
             files.append([file.rsplit(".",1)[1],file ])

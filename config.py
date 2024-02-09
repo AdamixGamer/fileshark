@@ -1,7 +1,7 @@
 
 #default starting location
 #default value = "."
-defaultdir = "./testfiles"
+defaultdir = "./data/testfiles"
 
 #enable server stop button
 enableserverstop = True
