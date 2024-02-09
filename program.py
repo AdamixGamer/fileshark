@@ -19,6 +19,8 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # podgląd plików
 # wiecej ikon dla formatów plików
 # scrollowanie listy plikow
+# dodac dzialajace ustawienia
+
 logged = False
 @app.route("/")
 def index(alert = "",path=""):
@@ -99,7 +101,7 @@ def login(alert=""):
     command = "select * from hashes where hashes.username = '" + username + "'"
     hashed = hashes.execute(command).fetchall()
     if len(hashed) == 0:
-        return render_template("login.html",alert="Username does not exist in the database")
+        return render_template("login.html",alert="Username or password is not correct. Please try again")
 
     if bcrypt.checkpw(password.encode('utf-8'), hashed[0][1].encode('utf-8')):
         global logged
@@ -107,7 +109,7 @@ def login(alert=""):
         print("logged")
         return index()
 
-    return render_template("login.html",alert="Username or password is not correct. Please try again")
+    return render_template("login.html", alert="Username or password is not correct. Please try again")
     
 
 def databasecreation():

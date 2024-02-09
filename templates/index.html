@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="template/styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
     <title>Pliki</title>
   </head>
 
@@ -14,15 +14,15 @@
     <table>
       {% for dir in dirs%}
       <tr>
-        <td><img src="static/dir.png" width="20px" height="20px" /></td>
+        <td><img src="static/icon/dir.png" width="20px" height="20px" /></td>
         <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
       </tr>
       {%endfor%} {% for file in files%}
       <tr>
         {%for icon in fileicons%} {%if icon == file[0]%}
-        <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
+        <td><img src="static/icon/{{icon}}.png" width="20px" height="20px" /></td>
         {%break%} {%elif icon == "unknown"%}
-        <td><img src="static/{{icon}}.png" width="20px" height="20px" /></td>
+        <td><img src="static/icon/{{icon}}.png" width="20px" height="20px" /></td>
         {%endif%} {%endfor%}
         <td>{{file[1]}}</td>
         <td>

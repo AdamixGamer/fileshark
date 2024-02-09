@@ -26,6 +26,7 @@ fileicons = [
     "tiff",
     "txt",
     "html",
+    "pdf",
 
     #do not change this 2 lines below
     "err",
