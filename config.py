@@ -1,7 +1,7 @@
 
 #default starting location
 #default value = "."
-defaultdir = "./data/testfiles"
+defaultdir = "/workspace/fileshark/data/testfiles"
 
 #enable server stop button
 enableserverstop = True

@@ -19,6 +19,8 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # wiecej ikon dla formatów plików
 # scrollowanie listy plikow
 # dodac dzialajace ustawienia
+#jezeli folder jest w folderze ktory nie jest . (/workspace/fileshark), program nie wykrywa folderów
+
 
 logged = False
 @app.route("/")
@@ -34,8 +36,6 @@ def index(alert = "",path=""):
 
     noextensionfiles = [file for file in listed if not os.path.isdir(file)]
     files = []
-    print(listed)
-    print(noextensionfiles)
     try:
         for file in noextensionfiles:
             files.append([file.rsplit(".",1)[1],file ])

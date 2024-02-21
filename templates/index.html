@@ -1,6 +1,9 @@
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css"/>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
     <title>Pliki</title>
   </head>
 
@@ -10,94 +13,90 @@
       alert("{{alert}}");
     </script>
     {%endif%}
-    <h2>Ścieżka: "{{path}}"</h2>
-    <table>
-      {% for dir in dirs%}
-      <tr>
-        <td><img src="static/icon/dir.png" width="20px" height="20px" /></td>
-        <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
-      </tr>
-      {%endfor%} {% for file in files%}
-      <tr>
-        {%for icon in fileicons%} {%if icon == file[0]%}
-        <td><img src="static/icon/{{icon}}.png" width="20px" height="20px" /></td>
-        {%break%} {%elif icon == "unknown"%}
-        <td><img src="static/icon/{{icon}}.png" width="20px" height="20px" /></td>
-        {%endif%} {%endfor%}
-        <td>{{file[1]}}</td>
-        <td>
-          <form action="{{url_for('download')}}">
-            <input type="hidden" name="file" value="{{file[1]}}" />
-            <input type="hidden" name="path" value="{{path}}" />
-            <input type="hidden" name="attachment" value="{{False}}" /><input
-              type="submit"
-              value="Open"
-            />
-          </form>
-        </td>
-        <td>
-          <form action="{{url_for('download')}}">
-            <input type="hidden" name="file" value="{{file[1]}}" />
-            <input type="hidden" name="path" value="{{path}}" />
-            <input type="hidden" name="attachment" value="{{True}}" /><input
-              type="submit"
-              value="Download"
-            />
-          </form>
-        </td>
-        <td>
-          <form action="{{url_for('delete')}}">
-            <input type="hidden" name="file" value="{{file[1]}}" />
-            <input type="hidden" name="path" value="{{path}}" /><input
-              type="submit"
-              {%if
-              enabledelete%}
-              value="Delete"
-              {%else%}
-              value="Delete (Disabled)"
-              {%endif%}
-            />
-          </form>
-        </td>
-      </tr>
-      {%endfor%}
-    </table>
-    <form action="{{url_for('serverstop')}}">
-      <input
-        style="position: absolute; right: 0%; bottom: 97.05%"
-        type="submit"
-        {%if
-        enableserverstop%}
-        value="Zatrzymaj Serwer"
-        {%else%}
-        value="Zatrzymaj Serwer (Disabled)"
-        {%endif%}
-      />
-    </form>
-    <form action="{{url_for('settings')}}">
-      <input
-        style="position: absolute; right: 0%; bottom: 0%"
-        type="submit"
-        value="Settings"
-      />
-    </form>
-    <form
-      action="{{url_for('upload')}}"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-      <input
-        type="file"
-        name="file"
-        style="position: absolute; right: 97, 5%; bottom: 5%"
-      />
+    <fieldset class="field">
+      <h2>Path: "{{path}}"</h2>
+      <form class="mainbuttons" action="{{url_for('serverstop')}}">
+        <input
+          type="submit"
+          {%if
+          enableserverstop%}
+          value="Zatrzymaj Serwer"
+          {%else%}
+          value="Zatrzymaj Serwer (Disabled)"
+          {%endif%}
+        />
+      </form>
+      <form class="mainbuttons" action="{{url_for('settings')}}">
+        <input type="submit" value="Settings" />
+      </form>
+    </fieldset>
 
-      <input
-        type="submit"
-        value="Upload"
-        style="position: absolute; right: 97, 5%; bottom: 2, 5%"
-      />
-      <input type="hidden" name="path" value="{{path}}" />
-    </form>
+    <div class="main">
+      <table>
+        {% for dir in dirs%}
+        <tr>
+          <td><img src="static/icon/dir.png" width="20px" height="20px" /></td>
+          <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
+        </tr>
+        {%endfor%} {% for file in files%}
+        <tr>
+          {%for icon in fileicons%} {%if icon == file[0]%}
+          <td>
+            <img src="static/icon/{{icon}}.png" width="20px" height="20px" />
+          </td>
+          {%break%} {%elif icon == "unknown"%}
+          <td>
+            <img src="static/icon/{{icon}}.png" width="20px" height="20px" />
+          </td>
+          {%endif%} {%endfor%}
+          <td>{{file[1]}}</td>
+          <td>
+            <form action="{{url_for('download')}}">
+              <input type="hidden" name="file" value="{{file[1]}}" />
+              <input type="hidden" name="path" value="{{path}}" />
+              <input type="hidden" name="attachment" value="{{False}}" /><input
+                type="submit"
+                value="Open"
+              />
+            </form>
+          </td>
+          <td>
+            <form action="{{url_for('download')}}">
+              <input type="hidden" name="file" value="{{file[1]}}" />
+              <input type="hidden" name="path" value="{{path}}" />
+              <input type="hidden" name="attachment" value="{{True}}" /><input
+                type="submit"
+                value="Download"
+              />
+            </form>
+          </td>
+          <td>
+            <form action="{{url_for('delete')}}">
+              <input type="hidden" name="file" value="{{file[1]}}" />
+              <input type="hidden" name="path" value="{{path}}" /><input
+                type="submit"
+                {%if
+                enabledelete%}
+                value="Delete"
+                {%else%}
+                value="Delete (Disabled)"
+                {%endif%}
+              />
+            </form>
+          </td>
+        </tr>
+        {%endfor%}
+      </table>
+      <form
+        action="{{url_for('upload')}}"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file" />
+
+        <input type="submit" value="Upload" />
+        <input type="hidden" name="path" value="{{path}}" />
+      </form>
+    </div>
   </body>
 </html>
