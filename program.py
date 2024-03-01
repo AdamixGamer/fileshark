@@ -35,17 +35,16 @@ def index(alert = "",path=""):
         path = os.path.realpath(request.args["path"])
     listed = os.listdir(path)
 
-    noextensionfiles = [file for file in listed if not os.path.isdir(file)]
+    noextensionfiles = [file for file in listed if not os.path.isdir(os.path.join(path, file))]
     files = []
     for file in noextensionfiles:
         try:
-            print(file)
             files.append([file.rsplit(".",1)[1], file])
         except:
             files.append(["err","Cannot load the directory or the file"])
             print("Error")
 
-    dirs = [file for file in listed if os.path.isdir(file)]
+    dirs = [file for file in listed if os.path.isdir(os.path.join(path, file))]
     if os.access(path + "/..", os.X_OK):
         dirs = [".."] + dirs
     return render_template("index.html",path=path, files=files, dirs=dirs,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete)

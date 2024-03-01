@@ -5,31 +5,27 @@
       href="{{ url_for('static', filename='css/index.css') }}"
     />
     <title>Pliki</title>
-  </head>
-
-  <body>
     {%if alert!=""%}
     <script>
       alert("{{alert}}");
     </script>
     {%endif%}
-    <fieldset class="field">
+  </head>
+  <body>
+    <div class="field">
       <h2>Path: "{{path}}"</h2>
-      <form class="mainbuttons" action="{{url_for('serverstop')}}">
-        <input
-          type="submit"
-          {%if
-          enableserverstop%}
-          value="Zatrzymaj Serwer"
-          {%else%}
-          value="Zatrzymaj Serwer (Disabled)"
-          {%endif%}
-        />
-      </form>
-      <form class="mainbuttons" action="{{url_for('settings')}}">
-        <input type="submit" value="Settings" />
-      </form>
-    </fieldset>
+      <div style="display: flex;">
+        <form class="mainbuttons">
+          <button type="submit" formaction="{{url_for('serverstop')}}">
+            {%if enableserverstop%}Stop Server{%else%}Stop Server
+            (Disabled){%endif%}
+          </button>
+          <button type="submit" formaction="{{url_for('settings')}}">
+            Settings
+          </button>
+        </form>
+      </div>
+    </div>
 
     <div class="main">
       <table>

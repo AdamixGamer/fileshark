@@ -4,7 +4,7 @@
 defaultdir = "/workspace/fileshark/data/testfiles"
 
 #enable server stop button
-enableserverstop = True
+enableserverstop = False
 
 #allow delete 
 allowdelete = False
