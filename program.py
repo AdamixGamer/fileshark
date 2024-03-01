@@ -25,8 +25,9 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 logged = False
 @app.route("/")
 def index(alert = "",path=""):
+    print(path)
     global logged
-    if not logged: #not logged
+    if logged: #not logged
         return render_template("login.html",alert="Please login to access the website")
     if path=="":
         path = config.defaultdir
@@ -36,12 +37,13 @@ def index(alert = "",path=""):
 
     noextensionfiles = [file for file in listed if not os.path.isdir(file)]
     files = []
-    try:
-        for file in noextensionfiles:
-            files.append([file.rsplit(".",1)[1],file ])
-    except:
-        files.append(["err","Cannot load the directory or the file"])
-        print("Error")
+    for file in noextensionfiles:
+        try:
+            print(file)
+            files.append([file.rsplit(".",1)[1], file])
+        except:
+            files.append(["err","Cannot load the directory or the file"])
+            print("Error")
 
     dirs = [file for file in listed if os.path.isdir(file)]
     if os.access(path + "/..", os.X_OK):
@@ -63,11 +65,13 @@ def serverstop():
 def settings():
     return render_template("settings.html")
 
+
 @app.route("/download")
 def download():
     file = request.args["file"]
     path = request.args["path"]
     asattachment = request.args["attachment"]
+    print(asattachment)
     try:
         return send_from_directory(path,file, as_attachment=asattachment)
     except:
