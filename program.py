@@ -10,7 +10,6 @@ app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
-# https://flask.palletsprojects.com/en/2.2.x/patterns/fileuploads/
 
 
 
