@@ -17,9 +17,7 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 #todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
-# scrollowanie listy plikow
 # dodac dzialajace ustawienia
-#jezeli folder jest w folderze ktory nie jest . (/workspace/fileshark), program nie wykrywa folderów
 
 
 logged = False
@@ -27,7 +25,7 @@ logged = False
 def index(alert = "",path=""):
     print(path)
     global logged
-    if logged: #not logged
+    if not logged: #not logged
         return render_template("login.html",alert="Please login to access the website")
     if path=="":
         path = config.defaultdir
