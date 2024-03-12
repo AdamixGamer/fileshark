@@ -7,6 +7,12 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/settings.css') }}"
     />
+    
+    {%if alert!=""%}
+    <script>
+      alert("{{alert}}");
+    </script>
+      {%endif%}
   </head>
 
   <body>

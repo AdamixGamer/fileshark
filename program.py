@@ -18,8 +18,6 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # podgląd plików
 # wiecej ikon dla formatów plików
 # dodac dzialajace ustawienia
-# obsłużyc session id 
-# logout
 # sprawdzac czas waznosci sesji
 # tworzenie uzytkownika
 
@@ -156,6 +154,19 @@ def logout():
     with sqlite3.connect("db/hashes.db") as session:
         session.execute("DELETE FROM sessionid WHERE sessionid=:sessionid",{"sessionid":sessionid})
     return render_template("login.html")
+
+@app.route("/createuser", methods=['POST'])
+def createuser():
+    username = request.form["login"]
+    password = request.form["password"]
+    repeatpassword = request.form["repeatpassword"]
+    if password != repeatpassword:
+        render_template("createuser.html",alert="Passwords do not match")
+    with sqlite3.connect("db/hashes.db") as newuser:
+        hash = bcrypt.hashpw(bytes(password), bcrypt.gensalt()).decode()
+        newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
+        newuser.commit()
+    render_template("login.html",alert="Account was created, please login")
 
 def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
