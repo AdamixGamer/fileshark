@@ -3,6 +3,7 @@ import os, signal
 from werkzeug.utils import secure_filename
 import sqlite3
 import bcrypt
+import uuid
 
 import config
 
@@ -17,15 +18,26 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # podgląd plików
 # wiecej ikon dla formatów plików
 # dodac dzialajace ustawienia
+# obsłużyc session id 
+# logout
+# sprawdzac czas waznosci sesji
+# tworzenie uzytkownika
 
 
-logged = False
 @app.route("/")
-def index(alert = "",path=""):
+def index(alert = "", path="",sessionid=""):
     print(path)
-    global logged
-    if not logged: #not logged
-        return render_template("login.html",alert="Please login to access the website")
+
+    if sessionid=="": 
+        if "sessionid" not in request.args:
+            return render_template("login.html",alert="Please login to access the website")
+        else:
+            sessionid = request.args["sessionid"]
+    with sqlite3.connect("db/hashes.db") as checksession:
+        count = checksession.execute("select count(*) from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+        print(count)
+        if count == 0:
+            return render_template("login.html",alert="Session id does not exist, please login again")
     if path=="":
         path = config.defaultdir
     if "path" in request.args:
@@ -44,7 +56,7 @@ def index(alert = "",path=""):
     dirs = [file for file in listed if os.path.isdir(os.path.join(path, file))]
     if os.access(path + "/..", os.X_OK):
         dirs = [".."] + dirs
-    return render_template("index.html",path=path, files=files, dirs=dirs,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete)
+    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete)
 
 @app.route("/serverstop")
 def serverstop():
@@ -59,6 +71,7 @@ def serverstop():
 
 @app.route("/settings")
 def settings():
+    print(request.args["id_sesji"])
     return render_template("settings.html")
 
 
@@ -98,30 +111,35 @@ def delete():
 def login(alert=""):
     username = request.form["login"]
     password = request.form["password"]
-    hashes = sqlite3.connect("db/hashes.db")
-    command = "select * from hashes where hashes.username = '" + username + "'"
-    hashed = hashes.execute(command).fetchall()
-    if len(hashed) == 0:
-        return render_template("login.html",alert="Username or password is not correct. Please try again")
+    with sqlite3.connect("db/hashes.db") as hashes:
+        hashed = hashes.execute("select * from hashes where hashes.username = :username",{"username":username}).fetchall()
+        if len(hashed) == 0:
+            return render_template("login.html",alert="Username or password is not correct. Please try again")
 
-    if bcrypt.checkpw(password.encode('utf-8'), hashed[0][1].encode('utf-8')):
-        global logged
-        logged = True
-        print("logged")
-        return index()
-
+        if bcrypt.checkpw(password.encode('utf-8'), hashed[0][1].encode('utf-8')):
+            sessionid = str(uuid.uuid4())
+            hashes.execute("insert into sessionid values(:username,:sessionid,datetime('now'))",{"username":username, "sessionid":sessionid})
+            hashes.commit()
+            print("logged")
+            return index(sessionid=sessionid)
     return render_template("login.html", alert="Username or password is not correct. Please try again")
-    
+
+@app.route("/logout")
+def logout():
+    sessionid=request.args["sessionid"]
+    with sqlite3.connect("db/hashes.db") as session:
+        session.execute("DELETE FROM sessionid WHERE sessionid=:sessionid",{"sessionid":sessionid})
+    return render_template("login.html")
 
 def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
 
     hashes.execute("create table if not exists hashes(username text, hash text)")
-
-    hash = bcrypt.hashpw(b"test", bcrypt.gensalt()).decode()
-    print(hash)
-    command = "insert into hashes(username,hash) values('test','" + hash + "')"
-    hashes.execute(command)
-    hashes.commit()
+    hashes.execute("create table if not exists sessionid(username text, sessionid text, sessionlifetime datetime)")
+    ##hash = bcrypt.hashpw(b"test", bcrypt.gensalt()).decode()
+    ##print(hash)
+    ##command = "insert into hashes(username,hash) values('test','" + hash + "')"
+    ##hashes.execute(command)
+    ##hashes.commit()
 
     hashes.close()

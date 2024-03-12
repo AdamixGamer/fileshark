@@ -15,14 +15,23 @@
     <div class="field">
       <h2>Path: "{{path}}"</h2>
       <div style="display: flex;">
-        <form class="mainbuttons">
-          <button type="submit" formaction="{{url_for('serverstop')}}">
+        <form class="mainbuttons" action="{{url_for('serverstop')}}">
+          <button type="submit">
             {%if enableserverstop%}Stop Server{%else%}Stop Server
             (Disabled){%endif%}
           </button>
-          <button type="submit" formaction="{{url_for('settings')}}">
+        </form>
+        <form class="mainbuttons" action="{{url_for('settings')}}">
+          <button type="submit">
             Settings
           </button>
+          <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+        </form>
+        <form class="mainbuttons" action="{{url_for('logout')}}">
+          <button type="submit">
+            Logout
+          </button>
+          <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
         </form>
       </div>
     </div>
