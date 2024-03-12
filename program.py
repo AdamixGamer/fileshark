@@ -33,10 +33,7 @@ def index(alert = "", path="",sessionid=""):
             return render_template("login.html",alert="Please login to access the website")
         else:
             sessionid = request.args["sessionid"]
-    with sqlite3.connect("db/hashes.db") as checksession:
-        count = checksession.execute("select count(*) from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
-        print(count)
-        if count == 0:
+    if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
     if path=="":
         path = config.defaultdir
@@ -60,6 +57,12 @@ def index(alert = "", path="",sessionid=""):
 
 @app.route("/serverstop")
 def serverstop():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
     if config.enableserverstop:
         try:
             os.kill(os.getpid(), signal.SIGTERM)
@@ -70,13 +73,24 @@ def serverstop():
         return redirect("/")
 
 @app.route("/settings")
-def settings():
-    print(request.args["id_sesji"])
-    return render_template("settings.html")
+def settings(): 
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    return render_template("settings.html",sessionid=sessionid)
 
 
 @app.route("/download")
 def download():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
     file = request.args["file"]
     path = request.args["path"]
     asattachment = request.args["attachment"]
@@ -88,6 +102,12 @@ def download():
 
 @app.route('/upload', methods=['POST'])
 def upload():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
     path = request.form["path"]
     if 'file' not in request.files:
         return index("No file sent.")
@@ -100,6 +120,12 @@ def upload():
 
 @app.route("/delete")
 def delete():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
     if config.allowdelete == False:
         return index()
     path = request.args["path"]
@@ -143,3 +169,10 @@ def databasecreation():
     ##hashes.commit()
 
     hashes.close()
+
+def checksession(sessionid):
+    with sqlite3.connect("db/hashes.db") as checksession:
+        count = checksession.execute("select count(*) from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+        if count == 0:
+            return False
+    return True
