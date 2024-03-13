@@ -155,24 +155,52 @@ def logout():
         session.execute("DELETE FROM sessionid WHERE sessionid=:sessionid",{"sessionid":sessionid})
     return render_template("login.html")
 
+@app.route("/loadusercreate") #not final
+def loadusercreate():
+    return render_template("createuser.html")
+
 @app.route("/createuser", methods=['POST'])
 def createuser():
+
+    databasecreation()
+
+
     username = request.form["login"]
     password = request.form["password"]
     repeatpassword = request.form["repeatpassword"]
+    #username checks
+    
+    if len(username) < 3:
+        return render_template("createuser.html",alert="Username is too short. Minimal length is 3")
+    if len(username) > 24:
+        return render_template("createuser.html",alert="Username is too long. Maximum length is 24")
+
+    #passwords checks
     if password != repeatpassword:
-        render_template("createuser.html",alert="Passwords do not match")
+        return render_template("createuser.html",alert="Passwords do not match")
+    if len(password) < 6:
+        return render_template("createuser.html",alert="Password is too short. Minimal length is 6")
+    if len(password) > 32:
+        return render_template("createuser.html",alert="Username is too long. Maximu length is 32")
+
     with sqlite3.connect("db/hashes.db") as newuser:
-        hash = bcrypt.hashpw(bytes(password), bcrypt.gensalt()).decode()
+        #database checks
+
+        usernamecount = newuser.execute("select count(*) from hashes where username=:username",{"username":username}).fetchall()[0][0]
+        if usernamecount > 0:
+            return render_template("createuser.html",alert="Username or password is not correct")
+        hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
         newuser.commit()
-    render_template("login.html",alert="Account was created, please login")
+
+    return render_template("login.html",alert="Account was created, please login")
 
 def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
 
     hashes.execute("create table if not exists hashes(username text, hash text)")
     hashes.execute("create table if not exists sessionid(username text, sessionid text, sessionlifetime datetime)")
+    
     ##hash = bcrypt.hashpw(b"test", bcrypt.gensalt()).decode()
     ##print(hash)
     ##command = "insert into hashes(username,hash) values('test','" + hash + "')"
