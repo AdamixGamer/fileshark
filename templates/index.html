@@ -20,6 +20,7 @@
             {%if enableserverstop%}Stop Server{%else%}Stop Server
             (Disabled){%endif%}
           </button>
+          <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
         </form>
         <form class="mainbuttons" action="{{url_for('settings')}}">
           <button type="submit">
@@ -41,7 +42,7 @@
         {% for dir in dirs%}
         <tr>
           <td><img src="static/icon/dir.png" width="20px" height="20px" /></td>
-          <td><a href="/?path={{path}}/{{dir}}">{{dir}}</a></td>
+          <td><a href="/?path={{path}}/{{dir}}&sessionid={{sessionid}}">{{dir}}</a></td>
         </tr>
         {%endfor%} {% for file in files%}
         <tr>
