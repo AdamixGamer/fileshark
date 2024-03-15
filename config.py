@@ -1,10 +1,12 @@
+#session lifetime for every user
+SESSION_LIFETIME = 60
 
 #default starting location
 #default value = "."
 defaultdir = "/workspace/fileshark/data/testfiles"
 
 #enable server stop button
-enableserverstop = False
+enableserverstop = True
 
 #allow delete 
 allowdelete = False

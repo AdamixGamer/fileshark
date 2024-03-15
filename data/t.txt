@@ -1,0 +1,89 @@
+#include <iostream>
+
+using namespace std;
+
+//ax^2 +bx + c = 0
+//Równanie kwadratowe mo¿e mieæ:
+//0, 1 lub 2 rozwi¹zania
+//Funkcja ma napisaæ ile dane równanie ma rozwi¹zañ oraz je podaæ
+//https://pl.wikipedia.org/wiki/R%C3%B3wnanie_kwadratowe
+void rozwiazanieRownaniaKwadratowego(double a, double b, double c);
+//a=1, b=2, c=1
+//x^2 + 2x + 1 = 0
+void symbolNewtona(int n, int k);
+//ax + b = 0
+//x = -b/a
+// a != 0
+void rozwiazanieRównaniaLiniowego(double a, double b);
+
+void rysujChoinke(int wiersze);
+//choinka
+int main()
+{
+//   ax^2 +bx + c = 0
+
+//    rysujChoinke(5);
+//    rysujChoinke(0);
+//    rysujChoinke(-1);
+//    rysujChoinke(15);
+//    rysujChoinke(50);
+
+    rozwiazanieRównaniaLiniowego(0.0,0.0);
+    rozwiazanieRównaniaLiniowego(0.0,1.0);
+    rozwiazanieRównaniaLiniowego(2.0,-4.0);
+    rozwiazanieRownaniaKwadratowego(1.0, 2.0, 1.0);
+    rozwiazanieRownaniaKwadratowego(1.0, 3.0, 1.0);
+    rozwiazanieRownaniaKwadratowego(1.0, 2.0, 4.0);
+    return 0;
+}
+
+void rozwiazanieRównaniaLiniowego(double a, double b)
+{
+    if(a == 0.0)
+    {
+        if (b == 0.0)
+            cout << "Równanie ma nieskoñczenie wiele rozwi¹zañ!" << endl;
+        else
+            cout << "Równanie nie ma rozwi¹zania!" << endl;
+        return;
+    }
+
+    cout << "Rozwi¹zaniem równania [" << a << "*X + " << b << " = 0] jest liczba: " << (-b/a) << "." << endl;
+}
+
+void rozwiazanieRownaniaKwadratowego(double a, double b, double c)
+{
+    double delta = b*b - 4*a*c;
+    cout << "Wyra¿enie delta ma wartoœæ: " << delta << endl;
+    if (delta<0.0)
+    {
+        cout << "Równanie nie ma rozwi¹zania!" << endl;
+    } else if (delta > 0.0)
+    {
+        cout << "Równanie ma dwa rozwi¹zania!" << endl;
+        //policzenie rozwi¹zañ x1, x2
+    } else  //delta ==0
+    {
+        cout << "Równanie ma jedno rozwi¹zanie!" << endl;
+    }
+}
+
+void rysujChoinke(int wiersze)
+{
+    if (wiersze<=0)
+    {
+        cout << "Taka choinka nie istnieje!" << endl;
+        return;
+    }
+    cout << "Choinka z " << wiersze << " poziomami." << endl;
+    for(int i=0; i < wiersze; i++)
+    {
+        for (int j=wiersze-1- i; j>0; j--)
+            cout << " ";
+
+        for (int j=0; j <2*i + 1; j++)
+            cout << "*";
+        cout << endl;
+    }
+
+}

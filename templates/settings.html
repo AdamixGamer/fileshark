@@ -8,7 +8,7 @@
       href="{{ url_for('static', filename='css/settings.css') }}"
     />
     
-    {%if alert!=""%}
+    {% if alert != "" %}
     <script>
       alert("{{alert}}");
     </script>
