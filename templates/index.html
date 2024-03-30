@@ -38,11 +38,44 @@
     </div>
 
     <div class="main">
+      <form
+        action="{{url_for('upload')}}"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="file" />
+        <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+        <input type="submit" value="Upload" />
+        <input type="hidden" name="path" value="{{path}}" />
+      </form>
+      <form
+      action="{{url_for('addfolder')}}"
+      >
+        <input type="text" name="foldername" placeholder="Nazwa katalogu"/>
+        <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+        <input type="submit" value="Create" />
+        <input type="hidden" name="path" value="{{path}}" />
+      </form>
       <table>
         {% for dir in dirs%}
         <tr>
           <td><img src="static/icon/dir.png" width="20px" height="20px" /></td>
           <td><a href="/?path={{path}}/{{dir}}&sessionid={{sessionid}}">{{dir}}</a></td>
+          <td>{% if dir != ".."%}
+            <form action="{{url_for('deletedir')}}">
+            <input type="hidden" name="dir" value="{{dir}}" />
+            <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+            <input type="hidden" name="path" value="{{path}}" /><input
+              type="submit"
+              {%if
+              enabledelete%}
+              value="Delete"
+              {%else%}
+              value="Delete (Disabled)"
+              {%endif%}
+              
+            />
+          </form>{%endif%}</td>
         </tr>
         {%endfor%} {% for file in files%}
         <tr>
@@ -96,16 +129,7 @@
         </tr>
         {%endfor%}
       </table>
-      <form
-        action="{{url_for('upload')}}"
-        method="POST"
-        enctype="multipart/form-data"
-      >
-        <input type="file" name="file" />
-        <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
-        <input type="submit" value="Upload" />
-        <input type="hidden" name="path" value="{{path}}" />
-      </form>
+      
     </div>
   </body>
 </html>

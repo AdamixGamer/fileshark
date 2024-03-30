@@ -4,6 +4,7 @@ from werkzeug.utils import secure_filename
 import sqlite3
 import bcrypt
 import uuid
+import shutil
 
 import config
 
@@ -11,21 +12,18 @@ app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
-
-
-
 #todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
-# dodac dzialajace ustawienia
+# dodac dzialajace ustawienia (po folderach domowych)
 # dodac folder domowy
 # dodac uzytkownika administratora
-# tworzenie katalogow
 
 
 @app.route("/")
 def index(alert = "", path="",sessionid=""):
     print(path)
+    
     if sessionid=="": 
         if "sessionid" not in request.args:
             return render_template("login.html",alert="Please login to access the website")
@@ -34,9 +32,15 @@ def index(alert = "", path="",sessionid=""):
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
     if path=="":
-        path = config.defaultdir
+        with sqlite3.connect("db/hashes.db") as userfolder:
+            username = userfolder.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+            path = config.defaultdir + "/" + username
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
+
+    #if not checkpath(sessionid,path):
+    #    return index(alert = "You are not allowed to access the directory", path=path,sessionid=sessionid)
+
     listed = os.listdir(path)
 
     noextensionfiles = [file for file in listed if not os.path.isdir(os.path.join(path, file))]
@@ -70,6 +74,7 @@ def serverstop():
     else:
         return redirect("/")
 
+
 @app.route("/settings")
 def settings(): 
     if "sessionid" not in request.args:
@@ -81,6 +86,30 @@ def settings():
     return render_template("settings.html", sessionid=sessionid, alert="")
 
 
+@app.route("/addfolder")
+def addfolder():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    path = request.args["path"]
+    name = request.args["foldername"]
+    fullpath = os.path.join(path, name)
+    if os.path.exists(fullpath):
+        if os.path.isdir(fullpath):
+            return index(alert="This folder already exists!",path=path,sessionid=sessionid)
+        else:
+            return index(alert="File with the same name already exists!",path=path,sessionid=sessionid)
+    else:
+        try:
+            os.mkdir(fullpath)
+        except e:
+            return index(alert=e.message,path=path,sessionid=sessionid)
+        return index(path=path,sessionid=sessionid)
+
+    
 @app.route("/download")
 def download():
     if "sessionid" not in request.args:
@@ -115,7 +144,7 @@ def upload():
         return index("No file selected")
     filename = secure_filename(file.filename)
     file.save(os.path.join(path, filename))
-    return index(path=path)
+    return index(path=path,sessionid=sessionid)
 
 
 @app.route("/delete")
@@ -127,12 +156,43 @@ def delete():
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
     if config.allowdelete == False:
-        return index()
+        return index(sessionid=sessionid)
     path = request.args["path"]
     file = request.args["file"]
     os.remove(os.path.join(path,file))
-    return index()
+    return index(sessionid=sessionid)
 
+@app.route("/deletedir")
+def deletedir():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    if config.allowdelete == False:
+        return index(sessionid=sessionid)
+    path = request.args["path"]
+    file = request.args["dir"]
+    fullpath = os.path.join(path,file)
+    if os.path.exists(fullpath):
+        if os.path.isdir(fullpath):
+            if len(os.listdir(fullpath)) > 0:
+                if "allowdelete" not in request.args:
+                    return render_template("deletefolder.html",sessionid=sessionid,path=path,dir=file,)
+                else:
+                    shutil.rmtree(fullpath)
+                    return index(path=path,sessionid=sessionid)
+            else:
+                shutil.rmtree(fullpath)
+                return index(path=path,sessionid=sessionid)
+        else:
+            return index(alert="Error",path=path,sessionid=sessionid)
+    else:
+        return index(alert="Folder does not exist",path=path,sessionid=sessionid)
+    return index(alert="Cannot delete the folder",path=path,sessionid=sessionid)
+    
+    
 
 @app.route("/login", methods=['POST'])
 def login(alert=""):
@@ -194,6 +254,7 @@ def createuser():
             return render_template("createuser.html",alert="Username or password is not correct")
         hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
+        os.mkdir(config.defaultdir + "/" + username)
         newuser.commit()
 
     return render_template("login.html",alert="Account was created, please login")
@@ -223,4 +284,13 @@ def checksession(sessionid):
             return False
         checksession.execute(f"update sessionid set sessionlifetime=datetime('now', '+{config.SESSION_LIFETIME} minutes') where sessionid=:sessionid",{"sessionid":sessionid})
         checksession.commit()
+    return True
+
+def checkpath(sessionid,path):
+    with sqlite3.connect("db/hashes.db") as checkpath:
+        
+        username = checkpath.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+        print(f"{path.split(username,1)[0] + "/" + username} |  {os.path.join(config.defaultdir,username)}")
+        if path.split(username,1)[0] + "/" + username  != os.path.join(config.defaultdir,username):
+            return False
     return True

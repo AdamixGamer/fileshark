@@ -3,7 +3,7 @@ SESSION_LIFETIME = 60
 
 #default starting location
 #default value = "."
-defaultdir = "/workspace/fileshark/data/testfiles"
+defaultdir = "/workspace/fileshark/users"
 
 #enable server stop button
 enableserverstop = True

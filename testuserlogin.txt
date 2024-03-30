@@ -3,3 +3,6 @@ password: p@s$w0rd
 
 login: 💀💀💀💀💀💀💀💀
 password: 💀💀💀💀💀💀💀💀
+
+login: admin
+password: adminuser
