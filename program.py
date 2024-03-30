@@ -255,6 +255,8 @@ def createuser():
         hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
         os.mkdir(config.defaultdir + "/" + username)
+        with open(config.defaultdir + "/" + username + '/welcome.txt', 'w') as file:
+            pass
         newuser.commit()
 
     return render_template("login.html",alert="Account was created, please login")
