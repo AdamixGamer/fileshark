@@ -1,8 +1,2 @@
-login: testuser
-password: p@s$w0rd
-
-login: 💀💀💀💀💀💀💀💀
-password: 💀💀💀💀💀💀💀💀
-
-login: admin
-password: adminuser
+login: User1234
+password: P@ssword
