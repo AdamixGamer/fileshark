@@ -5,6 +5,7 @@ import sqlite3
 import bcrypt
 import uuid
 import shutil
+import json
 
 import config
 
@@ -18,7 +19,7 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # dodac dzialajace ustawienia (po folderach domowych)
 # weryfikacja uprawnien (folder domowy)
 # dodac uzytkownika administratora
-#logi
+# logi
 
 
 @app.route("/")
@@ -32,13 +33,10 @@ def index(alert = "", path="",sessionid=""):
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
     if path=="":
-        with sqlite3.connect("db/hashes.db") as userfolder:
-            username = userfolder.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
-            path = config.defaultdir + "/" + username
+        path = config.defaultdir + "/" + GetUsername(sessionid)
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
-    with sqlite3.connect("db/hashes.db") as username:
-        username = username.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+    username = GetUsername(sessionid)
 
     #if not checkpath(sessionid,path):
     #    return index(alert = "You are not allowed to access the directory", path=config.defaultdir + "/" + username,sessionid=sessionid)
@@ -58,9 +56,10 @@ def index(alert = "", path="",sessionid=""):
 
     dirs = [file for file in listed if os.path.isdir(os.path.join(path, file))]
     if os.access(path + "/..", os.X_OK):
+        username = GetUsername(sessionid)
         if path!=config.defaultdir + "/" + username:
             dirs = [".."] + dirs
-    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete,userpath=userpath)
+    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=LoadUserConfig(sessionid)["allowdelete"],userpath=userpath)
 
 @app.route("/serverstop")
 def serverstop():
@@ -147,6 +146,8 @@ def upload():
     file = request.files['file']
     if file.filename == '':
         return index("No file selected")
+    if not f"{path}/{file.filename}".isdir():
+        return index(path=path,sessionid=sessionid,alert=f"File named {file.filename} already exists")
     filename = secure_filename(file.filename)
     file.save(os.path.join(path, filename))
     return index(path=path,sessionid=sessionid)
@@ -160,7 +161,8 @@ def delete():
         sessionid = request.args["sessionid"]
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
-    if config.allowdelete == False:
+    userconfig = LoadUserConfig(sessionid)
+    if not userconfig["allowdelete"]:
         return index(sessionid=sessionid)
     path = request.args["path"]
     file = request.args["file"]
@@ -175,7 +177,7 @@ def deletedir():
         sessionid = request.args["sessionid"]
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
-    if config.allowdelete == False:
+    if not LoadUserConfig(sessionid)["allowdelete"]:
         return index(sessionid=sessionid)
     path = request.args["path"]
     file = request.args["dir"]
@@ -259,6 +261,7 @@ def createuser():
         hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
         newuser.commit()
+    #default user files
     userpath = config.defaultdir + "/" + username
     shutil.copytree("./userblueprint",userpath)
     os.rename(userpath+"/systemfiles/username.config.py",userpath+"/systemfiles/" + username +".config.py")
@@ -269,18 +272,9 @@ def getuserpath(path):
 
 def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
-
     hashes.execute("create table if not exists hashes(username text UNIQUE, hash text)")
     hashes.execute("create table if not exists sessionid(username text , sessionid text, sessionlifetime datetime)")
-    
-    ##hash = bcrypt.hashpw(b"test", bcrypt.gensalt()).decode()
-    ##print(hash)
-    ##command = "insert into hashes(username,hash) values('test','" + hash + "')"
-    ##hashes.execute(command)
-    ##hashes.commit()
-
     hashes.close()
-
 
 def checksession(sessionid):
     with sqlite3.connect("db/hashes.db") as checksession:
@@ -292,13 +286,16 @@ def checksession(sessionid):
     return True
 
 def checkpath(sessionid,path):
-    with sqlite3.connect("db/hashes.db") as checkpath:
-        
-        username = checkpath.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
-        print(f"{path.split(username,1)[0] + "/" + username} |  {os.path.join(config.defaultdir,username)}")
-        if path.split(username,1)[0] + "/" + username  != os.path.join(config.defaultdir,username):
-            return True
+    username = GetUsername(sessionid)
+    print(f"{path.split(username,1)[0] + "/" + username} |  {os.path.join(config.defaultdir,username)}")
+    if path.split(username,1)[0] + "/" + username  != os.path.join(config.defaultdir,username):
+        return True
     return False
+
+def GetUsername(sessionid):
+    with sqlite3.connect("db/hashes.db") as username:
+        username = username.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+    return username
 
 def printip():
     if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
@@ -309,3 +306,10 @@ def printip():
         print("----")
         print(request.environ['HTTP_X_FORWARDED_FOR'])
         print("----")
+
+def LoadUserConfig(sessionid):
+    username = GetUsername(sessionid)
+    defaultdir = config.defaultdir
+    with open(f"{defaultdir}/{username}/systemfiles/{username}.config.json") as configfile:
+        userconfig = json.load(configfile)
+        return userconfig
