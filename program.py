@@ -16,12 +16,14 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # podgląd plików
 # wiecej ikon dla formatów plików
 # dodac dzialajace ustawienia (po folderach domowych)
-# dodac folder domowy
+# weryfikacja uprawnien (folder domowy)
 # dodac uzytkownika administratora
+#logi
 
 
 @app.route("/")
 def index(alert = "", path="",sessionid=""):
+    printip()
     if sessionid=="": 
         if "sessionid" not in request.args:
             return render_template("login.html",alert="Please login to access the website")
@@ -37,13 +39,12 @@ def index(alert = "", path="",sessionid=""):
         path = os.path.realpath(request.args["path"])
     with sqlite3.connect("db/hashes.db") as username:
         username = username.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
-    userpath = getuserpath(path)
-    print(userpath)
+
     #if not checkpath(sessionid,path):
     #    return index(alert = "You are not allowed to access the directory", path=config.defaultdir + "/" + username,sessionid=sessionid)
 
     userpath = getuserpath(path)
-    print(userpath)
+    #print(userpath)
     listed = os.listdir(path)
 
     noextensionfiles = [file for file in listed if not os.path.isdir(os.path.join(path, file))]
@@ -211,7 +212,6 @@ def login(alert=""):
             sessionid = str(uuid.uuid4())
             hashes.execute(f"insert into sessionid values(:username,:sessionid,datetime('now', '+{config.SESSION_LIFETIME} minutes'))", {"username":username, "sessionid":sessionid})
             hashes.commit()
-            print("logged")
             return index(sessionid=sessionid)
     return render_template("login.html", alert="Username or password is not correct. Please try again")
 
@@ -283,8 +283,6 @@ def databasecreation():
 
 
 def checksession(sessionid):
-    print(request.remote_addr)
-    print("----")
     with sqlite3.connect("db/hashes.db") as checksession:
         result = checksession.execute("select * from sessionid where sessionid=:sessionid and sessionlifetime > datetime('now')",{"sessionid":sessionid}).fetchall()
         if len(result) == 0:
@@ -301,3 +299,13 @@ def checkpath(sessionid,path):
         if path.split(username,1)[0] + "/" + username  != os.path.join(config.defaultdir,username):
             return True
     return False
+
+def printip():
+    if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
+        print("----")
+        print(request.environ['REMOTE_ADDR'])
+        print("----")
+    else:
+        print("----")
+        print(request.environ['HTTP_X_FORWARDED_FOR'])
+        print("----")
