@@ -1,2 +1,8 @@
 login: User1234
 password: P@ssword
+
+login: JanKowalski
+password: Kowalski32jAn
+
+login: Footmanbattery
+password: Footballfan32

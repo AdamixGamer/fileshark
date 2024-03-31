@@ -22,8 +22,6 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 @app.route("/")
 def index(alert = "", path="",sessionid=""):
-    print(path)
-    
     if sessionid=="": 
         if "sessionid" not in request.args:
             return render_template("login.html",alert="Please login to access the website")
@@ -37,10 +35,15 @@ def index(alert = "", path="",sessionid=""):
             path = config.defaultdir + "/" + username
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
-
+    with sqlite3.connect("db/hashes.db") as username:
+        username = username.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
+    userpath = getuserpath(path)
+    print(userpath)
     #if not checkpath(sessionid,path):
-    #    return index(alert = "You are not allowed to access the directory", path=path,sessionid=sessionid)
+    #    return index(alert = "You are not allowed to access the directory", path=config.defaultdir + "/" + username,sessionid=sessionid)
 
+    userpath = getuserpath(path)
+    print(userpath)
     listed = os.listdir(path)
 
     noextensionfiles = [file for file in listed if not os.path.isdir(os.path.join(path, file))]
@@ -54,8 +57,9 @@ def index(alert = "", path="",sessionid=""):
 
     dirs = [file for file in listed if os.path.isdir(os.path.join(path, file))]
     if os.access(path + "/..", os.X_OK):
-        dirs = [".."] + dirs
-    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete)
+        if path!=config.defaultdir + "/" + username:
+            dirs = [".."] + dirs
+    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,enabledelete=config.allowdelete,userpath=userpath)
 
 @app.route("/serverstop")
 def serverstop():
@@ -254,13 +258,14 @@ def createuser():
             return render_template("createuser.html",alert="Username or password is not correct")
         hash = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
         newuser.execute("insert into hashes(username,hash) values(:username,:hash)",{"username":username,"hash":hash})
-        os.mkdir(config.defaultdir + "/" + username)
-        with open(config.defaultdir + "/" + username + '/welcome.txt', 'w') as file:
-            pass
         newuser.commit()
-
+    userpath = config.defaultdir + "/" + username
+    shutil.copytree("./userblueprint",userpath)
+    os.rename(userpath+"/systemfiles/username.config.py",userpath+"/systemfiles/" + username +".config.py")
     return render_template("login.html",alert="Account was created, please login")
 
+def getuserpath(path):
+    return path.split("users",1)[1]
 
 def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
@@ -294,5 +299,5 @@ def checkpath(sessionid,path):
         username = checkpath.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
         print(f"{path.split(username,1)[0] + "/" + username} |  {os.path.join(config.defaultdir,username)}")
         if path.split(username,1)[0] + "/" + username  != os.path.join(config.defaultdir,username):
-            return False
-    return True
+            return True
+    return False
