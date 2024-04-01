@@ -15,6 +15,7 @@
     <div class="field">
       <h2>Path: "{{userpath}}"</h2>
       <div style="display: flex;">
+        {%if adminperms%}
         <form class="mainbuttons" action="{{url_for('serverstop')}}">
           <button type="submit">
             {%if enableserverstop%}Stop Server{%else%}Stop Server
@@ -22,6 +23,7 @@
           </button>
           <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
         </form>
+        {%endif%}
         <form class="mainbuttons" action="{{url_for('settings')}}">
           <button type="submit">
             Settings

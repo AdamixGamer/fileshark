@@ -6,3 +6,8 @@ password: Kowalski32jAn
 
 login: Footmanbattery
 password: Footballfan32
+
+
+adminusers
+login: adminuser
+password: @dmInu$3r

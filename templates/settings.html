@@ -16,12 +16,18 @@
   </head>
 
   <body>
-    <h2>Server Stop Enabled</h2>
     <form action="{{url_for('savesettings')}}">
+      <h2>Allow file delete</h2>
       {%if allowdelete%}
         <input type="checkbox" name="allowdelete" id="allowdelete" value="True" checked>
       {%else%}
         <input type="checkbox" name="allowdelete" id="allowdelete" value="True">
+      {%endif%}
+      <h2>Allow overwriting files when uploading</h2>
+      {%if overwritefile%}
+        <input type="checkbox" name="overwritefile" id="overwritefile" value="True" checked>
+      {%else%}
+        <input type="checkbox" name="overwritefile" id="overwritefile" value="True">
       {%endif%}
       <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
       <input type="hidden" value="{{path}}" id="spath" name="path" />

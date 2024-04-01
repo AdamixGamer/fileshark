@@ -1,1 +1,4 @@
-{"allowdelete": true}
+{
+    "allowdelete" : true,
+    "overwritefile" : false
+}
