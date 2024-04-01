@@ -26,6 +26,7 @@
           <button type="submit">
             Settings
           </button>
+          <input type="hidden" value="{{path}}" id="path" name="path" />
           <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
         </form>
         <form class="mainbuttons" action="{{url_for('logout')}}">

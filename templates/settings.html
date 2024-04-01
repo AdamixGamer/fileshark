@@ -17,15 +17,20 @@
 
   <body>
     <h2>Server Stop Enabled</h2>
-
-    <label class="switch">
-      <input type="checkbox">
-      <span class="slider round"></span>
-    </label>
-
-
+    <form action="{{url_for('savesettings')}}">
+      {%if allowdelete%}
+        <input type="checkbox" name="allowdelete" id="allowdelete" value="True" checked>
+      {%else%}
+        <input type="checkbox" name="allowdelete" id="allowdelete" value="True">
+      {%endif%}
+      <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+      <input type="hidden" value="{{path}}" id="spath" name="path" />
+      <input type="submit" value="Save">
+    </form>
+    
     <form  action="{{url_for('index')}}">
       <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+      <input type="hidden" value="{{path}}" id="path" name="path" />
       <input
         style="position: absolute; right: 0%; bottom: 0%;"
         type="submit"

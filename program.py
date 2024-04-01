@@ -87,7 +87,31 @@ def settings():
         sessionid = request.args["sessionid"]
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
-    return render_template("settings.html", sessionid=sessionid, alert="")
+    path = request.args["path"]
+
+    userconfig = LoadUserConfig(sessionid)
+
+    return render_template("settings.html", sessionid=sessionid, alert="", path=path,allowdelete=userconfig["allowdelete"])
+
+@app.route("/settings/save")
+def savesettings():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    path = request.args["path"]
+
+    allowdelete = "allowdelete" in request.args
+    configdata = {
+        "allowdelete": allowdelete
+    }
+    username = GetUsername(sessionid)
+    with open(f"{config.defaultdir}/{username}/systemfiles/{username}.config.json", "w") as userconfig:
+        json.dump(configdata,userconfig)
+    return render_template("settings.html", sessionid=sessionid, alert="Settings saved", path=path, allowdelete=allowdelete)
+
 
 
 @app.route("/addfolder")
