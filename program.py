@@ -16,8 +16,7 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 #todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
-# dodac dzialajace ustawienia (po folderach domowych)
-# weryfikacja uprawnien (folder domowy)
+# weryfikacja uprawnien (folder domowy) [dokonczyc]
 # dodac uzytkownika administratora
 # logi
 
