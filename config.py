@@ -30,6 +30,7 @@ fileicons = [
     "txt",
     "html",
     "pdf",
+    "json",
 
     #do not change this 2 lines below
     "err",

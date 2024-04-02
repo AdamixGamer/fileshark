@@ -92,8 +92,9 @@ def serverstop():
             print("Server stopped")
         except:
             print("Cannot close the server")
+            return index(alert="Error. Cannot stop the server",sessionid=sessionid)
     else:
-        return index(alert="Server stop is disabled or you lack permission",path=path,sessionid=sessionid)
+        return index(alert="Server stop is disabled or you lack permission",sessionid=sessionid)
 
 
 @app.route("/settings")
@@ -231,7 +232,7 @@ def delete():
     fullpath = os.path.join(path,file)
 
     if not checkpath(sessionid,fullpath):
-        return index(sessionid=sessionid,path=config.defaultdir + "/" + username,\
+        return index(sessionid=sessionid,path=config.defaultdir + "/" + GetUsername(sessionid),\
         alert = "You are not allowed to access the directory")
     
     os.remove(fullpath)
