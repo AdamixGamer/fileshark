@@ -11,12 +11,13 @@ import config
 
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
-#done:
-#foldery uzytkownika (kopiowanie /userblueprint)
-#config uzytkownika
-#ustawienia uzytkownika
-#permisje folderow uzytkownika
-#administrator
+
+# done:
+# foldery uzytkownika (kopiowanie /userblueprint)
+# config uzytkownika
+# ustawienia uzytkownika
+# permisje folderow uzytkownika
+# administrator
 
 #todo:
 # podgląd plików
