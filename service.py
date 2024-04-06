@@ -6,8 +6,12 @@ import bcrypt
 import uuid
 import shutil
 import json
+import logging
 
 import config
+
+logger = logging.getLogger("log")
+logging.basicConfig(filename='myapp.log', level=logging.INFO)
 
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
@@ -19,11 +23,12 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # permisje folderow uzytkownika
 # administrator
 
-#todo:
+# todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
 # logi
-# zmiana ladowania tworzenia uzytkownika na taka prosto z html( jak sie da)
+
+# https://www.w3schools.com/sql/sql_foreignkey.asp
 
 
 @app.route("/")
@@ -75,6 +80,7 @@ def index(alert = "", path="",sessionid=""):
                 dirs = [".."] + dirs
         else:
             dirs = [".."] + dirs
+    AddLog(action=f"Loaded directory : {path}",sessionid=sessionid,level="INFO")
     return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,\
     fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,\
     enabledelete=LoadUserConfig(sessionid)["allowdelete"], adminperms = IsUserAdmin(sessionid))
@@ -184,8 +190,10 @@ def download():
     asattachment = request.args["attachment"]
     print(asattachment)
     try:
+        AddLog(action=f"File downloaded : {path}/{file}",sessionid=sessionid,level="INFO")
         return send_from_directory(path,file, as_attachment=asattachment)
     except:
+        AddLog(action="Cannot download the file",sessionid=sessionid,level="WARNING")
         return index("Error. File cannot be downloaded or opened")
 
 
@@ -209,11 +217,13 @@ def upload():
         return index(alert = "No file sent.", sessionid=sessionid, path=path)
     file = request.files['file']
     if file.filename == '':
+        AddLog(action="No file selected for the upload",sessionid=sessionid,level="WARNING")
         return index("No file selected", sessionid=sessionid, path=path)
     if os.path.exists(f"{path}/{file.filename}"): #nie dziala
         return index(path=path,sessionid=sessionid,alert="File already exists")
     filename = secure_filename(file.filename)
     file.save(os.path.join(path, filename))
+    AddLog(action=f"File uploaded to : {path}/{filename}",sessionid=sessionid,level="INFO")
     return index(path=path,sessionid=sessionid)
 
 
@@ -224,19 +234,22 @@ def delete():
     else:
         sessionid = request.args["sessionid"]
     if not checksession(sessionid):
-            return render_template("login.html",alert="Session id does not exist, please login again")
+        return render_template("login.html",alert="Session id does not exist, please login again")
     userconfig = LoadUserConfig(sessionid)
     if not userconfig["allowdelete"]:
+        AddLog(action="Deleting is disabled in your settings",sessionid=sessionid,level="INFO")
         return index(sessionid=sessionid)
     path = request.args["path"]
     file = request.args["file"]
     fullpath = os.path.join(path,file)
 
     if not checkpath(sessionid,fullpath):
+        
         return index(sessionid=sessionid,path=config.defaultdir + "/" + GetUsername(sessionid),\
         alert = "You are not allowed to access the directory")
     
     os.remove(fullpath)
+    AddLog(action="Deleted : " + fullpath,sessionid=sessionid,level="INFO")
     return index(sessionid=sessionid)
 
 @app.route("/deletedir")
@@ -256,24 +269,41 @@ def deletedir():
     username = GetUsername(sessionid)
 
     if not checkpath(sessionid,fullpath):
+        AddLog(action="Cannot access the directory : " + fullpath ,level='WARNING',sessionid=sessionid)
         return index(sessionid=sessionid,path=config.defaultdir + "/" + username,\
         alert = "You are not allowed to access the directory")
 
-    if os.path.exists(fullpath):
+    if  os.path.exists(fullpath):
+        
         if os.path.isdir(fullpath):
             if len(os.listdir(fullpath)) > 0:
                 if "allowdelete" not in request.args:
                     return render_template("deletefolder.html",sessionid=sessionid,path=path,dir=file,)
                 else:
-                    shutil.rmtree(fullpath)
-                    return index(path=path,sessionid=sessionid)
+                    try:
+                        shutil.rmtree(fullpath)
+                        AddLog(action="Folder deleted : " + fullpath ,level='INFO',sessionid=sessionid)
+                        return index(path=path,sessionid=sessionid)
+                    except:
+                        AddLog(action="Cannot delete the folder. Permission denied : " + fullpath ,level='ERROR',sessionid=sessionid)
+                        return index(path=path,sessionid=sessionid,alert="Error. Permision denied")
             else:
-                shutil.rmtree(fullpath)
-                return index(path=path,sessionid=sessionid)
+                try:
+                    shutil.rmtree(fullpath)
+                    AddLog(action="Folder deleted : " + fullpath ,level='INFO',sessionid=sessionid)
+                    return index(path=path,sessionid=sessionid)
+                except:
+                    AddLog(action="Cannot delete the folder. Permission denied : " + fullpath ,level='ERROR',sessionid=sessionid)
+                    return index(path=path,sessionid=sessionid,alert="Error. Permision denied")
+                
         else:
-            return index(alert="Error",path=path,sessionid=sessionid)
+            AddLog(action="This is not a folder : " + fullpath ,level='WARNING',sessionid=sessionid)
+            return index(alert="This is not a folder",path=path,sessionid=sessionid)
     else:
+        AddLog(action="Folder does not exist : " + fullpath ,level='WARNING',sessionid=sessionid)
         return index(alert="Folder does not exist",path=path,sessionid=sessionid)
+
+    AddLog(action="Cannot delete the folder : " + fullpath ,level='ERROR',sessionid=sessionid)
     return index(alert="Cannot delete the folder",path=path,sessionid=sessionid)
     
     
@@ -286,24 +316,24 @@ def login(alert=""):
         hashes.execute("delete from sessionid where sessionlifetime < datetime('now')")
         hashed = hashes.execute("select * from hashes where hashes.username = :username",{"username":username}).fetchall()
         if len(hashed) == 0:
+            AddLog(action="Failed login",level='WARNING',sessionid=sessionid)
             return render_template("login.html",alert="Username or password is not correct. Please try again")
-        hashcheck =  False
-        try :
-            hashcheck = bcrypt.checkpw(password.encode('utf-8'), hashed[0][2].encode('utf-8'))
-        except:
-            print(password + " ----- " + str(hashed[0][1].encode('utf-8')))
+        hashcheck = bcrypt.checkpw(password.encode('utf-8'), hashed[0][2].encode('utf-8'))
         if hashcheck:
             sessionid = str(uuid.uuid4())
             hashes.execute(f"insert into sessionid values(:username,:sessionid,datetime('now', '+{config.SESSION_LIFETIME} minutes'))", {"username":username, "sessionid":sessionid})
             hashes.commit()
+            AddLog(action="User login",sessionid=sessionid,level="INFO")
             return index(sessionid=sessionid)
-
+        else:
+            AddLog(action="Failed login. Incorrect password",level='WARNING',sessionid=sessionid)
     return render_template("login.html", alert="Username or password is not correct. Please try again")
 
 
 @app.route("/logout")
 def logout():
     sessionid=request.args["sessionid"]
+    AddLog(action="Logout",level='INFO',sessionid=sessionid)
     with sqlite3.connect("db/hashes.db") as session:
         session.execute("DELETE FROM sessionid WHERE sessionid=:sessionid",{"sessionid":sessionid})
     return render_template("login.html",alert="")
@@ -365,6 +395,8 @@ def checksession(sessionid):
     with sqlite3.connect("db/hashes.db") as checksession:
         result = checksession.execute("select * from sessionid where sessionid=:sessionid and sessionlifetime > datetime('now')",{"sessionid":sessionid}).fetchall()
         if len(result) == 0:
+            AddLog(action=f"Session expired for id : {sessionid}",sessionid=sessionid,level="INFO")
+            checksession.execute(f"delete * from sessionid where sessionid={sessionid}")
             return False
         checksession.execute(f"update sessionid set sessionlifetime=datetime('now', '+{config.SESSION_LIFETIME} minutes') where sessionid=:sessionid",{"sessionid":sessionid})
         checksession.commit()
@@ -373,11 +405,14 @@ def checksession(sessionid):
 def checkpath(sessionid,path):
     username = GetUsername(sessionid)
     splitpath = path.split(username,1)
-    print(len(splitpath))
+    if IsUserAdmin(sessionid):
+        return True
     if len(splitpath) != 2:
+        AddLog(action="You cannot access the directory",sessionid=sessionid,level="WARNING")
         return False
     if splitpath[0] + "/" + username  != os.path.join(config.defaultdir,username):
         return True
+    AddLog(action="You cannot access the directory",sessionid=sessionid,level="WARNING")
     return False
 
 def GetUsername(sessionid):
@@ -396,8 +431,22 @@ def LoadUserConfig(sessionid):
     with open(f"{defaultdir}/{username}/systemfiles/{username}.config.json") as configfile:
         userconfig = json.load(configfile)
         return userconfig
+
 def IsUserAdmin(sessionid):
     username = GetUsername(sessionid)
     with sqlite3.connect("db/hashes.db") as perms:
         adminperms = perms.execute("select admin from adminpermission where username=:username",{"username":username}).fetchall()[0][0]
     return adminperms
+
+def AddLog(sessionid=None, action="", level=None):
+    systemlog = logger
+    if sessionid != None:
+        username = GetUsername(sessionid)
+        systemlog = logging.getLogger("user-"+username)
+
+    if level == None or level == 'INFO':
+        systemlog.info(action)
+    elif level == 'WARNING':
+        systemlog.warning(action)
+    elif level == 'ERROR':
+        systemlog.error(action)
