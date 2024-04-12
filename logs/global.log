@@ -50,3 +50,5 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 594-291-271
 INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
 INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
