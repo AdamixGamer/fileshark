@@ -2,8 +2,8 @@
 SESSION_LIFETIME = 60
 
 #location of all user folders
-#default value = "/workspace/fileshark/users"
-defaultdir = "/workspace/fileshark/users"
+#default value = "./users"
+defaultdir = "./users"
 
 #enable server stop button
 enableserverstop = True

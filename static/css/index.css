@@ -1,5 +1,5 @@
 .field {
-  background-color: #619dff;
+  background-color: #ADC4CE;
   width: 100%;
   position: fixed;
   top: 0;
@@ -7,6 +7,42 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+button{
+  background-color: #96B6C5;
+  border: none;
+  color: black;
+  height: 100%;
+  padding: 0px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:2px;
+  margin-right:2px;
+  border-radius: 12px;
+}
+button:hover {
+  background-color:rgb(130, 156, 168);
+  transition: 0.2s;
+}
+
+input {
+  background-color: #EEE0C9;
+  border: none;
+  color: black;
+  padding: 0px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:2px;
+  margin-right:2px;
+  border-radius: 12px;
+}
+input:hover{
+  transition: 0.2s;
+  background-color: #ddd1bd;
 }
 
 h2 {
@@ -19,5 +55,5 @@ h2 {
 
 body {
   margin: 0%;
-  /*background-color: rgb(20, 69, 185)*/
+  background-color: #F1F0E8;
 }

@@ -15,3 +15,6 @@ input {
     transition: 0.2s;
     background-color: #ddd1bd;
   }
+  body {
+    background-color: #F1F0E8;
+  }

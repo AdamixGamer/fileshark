@@ -10,8 +10,18 @@ import logging
 
 import config
 
-logger = logging.getLogger("log")
-logging.basicConfig(filename='myapp.log', level=logging.INFO)
+
+
+def SetupLogger(name,filename="logs/serverlogs.log"):
+    handler = logging.FileHandler(filename)
+    handler.setFormatter(logging.Formatter('%(levelname)s:%(name)s: %(message)s : Date: %(asctime)s'))
+    logger = logging.getLogger(name)
+    logger.addHandler(handler)
+    logger.setLevel(logging.INFO)
+    return logger
+
+logging.basicConfig(filename='logs/werkzeug.log', level=logging.INFO)
+
 
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
@@ -27,6 +37,7 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # podgląd plików
 # wiecej ikon dla formatów plików
 # logi
+# schowanie systemfiles
 
 # https://www.w3schools.com/sql/sql_foreignkey.asp
 
@@ -57,9 +68,7 @@ def index(alert = "", path="",sessionid=""):
             userpath = getuserpath(path)
     else:
         userpath = path
-    
 
-    
     #print(userpath)
     listed = os.listdir(path)
 
@@ -72,7 +81,7 @@ def index(alert = "", path="",sessionid=""):
             files.append(["err","Cannot load the directory or the file"])
             print("Error")
 
-    dirs = [file for file in listed if os.path.isdir(os.path.join(path, file))]
+    dirs = [file for file in listed if os.path.isdir(os.path.join(path, file)) and (file !="systemfiles" or checkadminperms)]
     if os.access(path + "/..", os.X_OK):
         username = GetUsername(sessionid)
         if not checkadminperms:
@@ -80,6 +89,7 @@ def index(alert = "", path="",sessionid=""):
                 dirs = [".."] + dirs
         else:
             dirs = [".."] + dirs
+
     AddLog(action=f"Loaded directory : {path}",sessionid=sessionid,level="INFO")
     return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,\
     fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,\
@@ -316,7 +326,7 @@ def login(alert=""):
         hashes.execute("delete from sessionid where sessionlifetime < datetime('now')")
         hashed = hashes.execute("select * from hashes where hashes.username = :username",{"username":username}).fetchall()
         if len(hashed) == 0:
-            AddLog(action="Failed login",level='WARNING',sessionid=sessionid)
+            AddLog(action="Failed login",level='WARNING')
             return render_template("login.html",alert="Username or password is not correct. Please try again")
         hashcheck = bcrypt.checkpw(password.encode('utf-8'), hashed[0][2].encode('utf-8'))
         if hashcheck:
@@ -326,7 +336,7 @@ def login(alert=""):
             AddLog(action="User login",sessionid=sessionid,level="INFO")
             return index(sessionid=sessionid)
         else:
-            AddLog(action="Failed login. Incorrect password",level='WARNING',sessionid=sessionid)
+            AddLog(action="Failed login. Incorrect password",level='WARNING')
     return render_template("login.html", alert="Username or password is not correct. Please try again")
 
 
@@ -381,6 +391,23 @@ def createuser():
     os.rename(userpath+"/systemfiles/username.config.json",userpath+"/systemfiles/" + username +".config.json")
     return render_template("login.html",alert="Account was created, please login")
 
+@app.route("/loadlogs")
+def loadlogs():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    path = request.args["path"]
+    username = GetUsername(sessionid)
+    with open(f"{config.defaultdir}/{username}/systemfiles/userlogs.log","r") as logs:
+        userlogs = [line.strip() for line in logs.readlines()]
+        userlogs.reverse()
+        return render_template("logs.html",sessionid=sessionid,path=path,userlogs=userlogs)
+
+
+    
 def getuserpath(path):
     return path.split("users",1)[1]
 
@@ -388,7 +415,7 @@ def databasecreation():
     hashes = sqlite3.connect("db/hashes.db")
     hashes.execute("create table if not exists hashes(id intiger primary key, username text UNIQUE, hash text)")
     hashes.execute("create table if not exists sessionid(username text , sessionid text, sessionlifetime datetime)")
-    hashes.execute("create table if not exists adminpermission(username text , admin bool)")
+    hashes.execute("create table if not exists adminpermission(username text , admin bool)") #id intiger foreign key references id from hashes,
     hashes.close()
 
 def checksession(sessionid):
@@ -439,14 +466,16 @@ def IsUserAdmin(sessionid):
     return adminperms
 
 def AddLog(sessionid=None, action="", level=None):
-    systemlog = logger
-    if sessionid != None:
+    if sessionid == None:
+        logger = SetupLogger("server")
+    else:
         username = GetUsername(sessionid)
-        systemlog = logging.getLogger("user-"+username)
-
+        logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
     if level == None or level == 'INFO':
-        systemlog.info(action)
+        logger.info(action)
     elif level == 'WARNING':
-        systemlog.warning(action)
+        logger.warning(action)
     elif level == 'ERROR':
-        systemlog.error(action)
+        logger.error(action)
+
+

@@ -24,6 +24,13 @@
           <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
         </form>
         {%endif%}
+        <form class="mainbuttons" action="{{url_for('loadlogs')}}">
+          <button type="submit">
+            Logs
+          </button>
+          <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
+          <input type="hidden" value="{{path}}" id="path" name="path" />
+        </form>
         <form class="mainbuttons" action="{{url_for('settings')}}">
           <button type="submit">
             Settings

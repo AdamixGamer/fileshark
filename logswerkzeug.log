@@ -1,0 +1,3 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 615-955-893
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading

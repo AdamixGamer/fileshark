@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logs.css') }}">
+    <title>Logs</title>
+  </head>
+  <body>
+    <form action="{{url_for('index')}}">
+      <input
+        type="hidden"
+        value="{{sessionid}}"
+        id="sessionid"
+        name="sessionid"
+      />
+      <input type="hidden" value="{{path}}" id="path" name="path" />
+      <input type="submit" value="Powrot" />
+    </form>
+    {%for log in userlogs%}
+        {%if log.find("ERROR")==0%}
+        <p style="color: red">{{log}}</p>
+        {%elif log.find("WARNING")==0%}
+        <p style="color: rgb(173, 165, 5)">{{log}}</p>
+        {%else%}
+        <p style="color: rgb(5, 197, 5)">{{log}}</p>
+        {%endif%}
+    {%endfor%}
+  </body>
+</html>
