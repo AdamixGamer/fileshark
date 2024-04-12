@@ -36,8 +36,10 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
-# logi
-# schowanie systemfiles
+# dostep wiekszej ilosci logow dla admina
+# edycja plików
+# lepszy css
+# light mode i dark mode ?
 
 # https://www.w3schools.com/sql/sql_foreignkey.asp
 

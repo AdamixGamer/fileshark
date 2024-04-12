@@ -44,3 +44,7 @@ INFO:werkzeug:127.0.0.1 - - [13/Apr/2024 00:02:38] "[36mGET /static/icon/txt.pn
 INFO:adminuser:Settings opened
 INFO:werkzeug:127.0.0.1 - - [13/Apr/2024 00:02:40] "GET /settings?path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser&sessionid=f5af0fcc-2714-4b43-9ec5-b663a4bfdeb4 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [13/Apr/2024 00:02:40] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
