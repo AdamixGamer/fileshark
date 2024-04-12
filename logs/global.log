@@ -549,3 +549,228 @@ INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 148-723-124
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:02:34] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:02:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:02:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:02:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:02:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:19] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:User login
+INFO:adminuser:Loaded directory : ./users/adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:45] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:45] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:45] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:45] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:53] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=./users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:53] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:58] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=./users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:58] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:04:58] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:01] "GET /settings?path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:01] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:03] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:03] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:03] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:03] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:52] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:05:52] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:25] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:25] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:25] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:25] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:27] "GET /?path=C:\\Adam\\Python%20Projekty\\fileshark\\users\\adminuser/systemfiles&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:27] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:27] "GET /static/icon/json.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:27] "GET /static/icon/unknown.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:34] "GET /settings?path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:34] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:35] "GET /settings/save?allowdelete=True&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:35] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:37] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:37] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:37] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:37] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:38] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:06:38] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:32] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:32] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:32] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:32] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:35] "GET /settings?path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:35] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:37] "GET /settings/save?allowdelete=True&overwritefile=True&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:37] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:41] "GET /settings/save?allowdelete=True&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:41] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:43] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:43] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:43] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:43] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:43] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:44] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:44] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:56] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:56] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:56] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:56] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:57] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:22:57] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:07] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:07] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:07] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:07] "GET /static/icon/json.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:07] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:08] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:23:08] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:10] "GET /?path=C:\\Adam\\Python%20Projekty\\fileshark\\users\\adminuser\\systemfiles/..&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:10] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:10] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:10] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:12] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:12] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:22] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:22] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:22] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:22] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:23] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:23] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:24] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:25] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:25] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:25] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:26] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:26] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:26] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:26] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:27] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:28] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:24:28] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Adam\\Python Projekty\\fileshark\\service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:52] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:53] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:53] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:53] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:53] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:56] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:56] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:58] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:58] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:58] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:59] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:26:59] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:05] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:05] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:05] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:05] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:06] "GET /?path=C:\\Adam\\Python%20Projekty\\fileshark\\users\\adminuser/systemfiles&sessionid=383c1ec7-c18d-43bd-a560-8925d857435b HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:06] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:06] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:06] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:06] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:07] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:07] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:12] "GET /loadlogs?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:12] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : C:\Adam\Python Projekty\fileshark\users\adminuser\systemfiles
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:34] "GET /?sessionid=383c1ec7-c18d-43bd-a560-8925d857435b&path=C:\\Adam\\Python+Projekty\\fileshark\\users\\adminuser\\systemfiles HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:34] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:34] "[36mGET /static/icon/json.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Apr/2024 22:27:34] "[36mGET /static/icon/unknown.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 594-291-271
+INFO:server:Server stopped by adminuser
+INFO:adminuser:Server stopped

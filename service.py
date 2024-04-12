@@ -20,7 +20,7 @@ def SetupLogger(name,filename="logs/serverlogs.log"):
     logger.setLevel(logging.INFO)
     return logger
 
-logging.basicConfig(filename='logs/werkzeug.log', level=logging.INFO)
+logging.basicConfig(filename='logs/global.log', level=logging.INFO)
 
 
 app = Flask(__name__)
@@ -105,10 +105,12 @@ def serverstop():
             return render_template("login.html",alert="Session id does not exist, please login again")
     if config.enableserverstop and IsUserAdmin(sessionid):
         try:
+            AddLog(action=f"Server stopped by {GetUsername(sessionid)}",level="INFO")
+            AddLog(action=f"Server stopped",sessionid=sessionid,level="INFO")
             os.kill(os.getpid(), signal.SIGTERM)
-            print("Server stopped")
         except:
             print("Cannot close the server")
+            AddLog(action=f"Cannot close the server",sessionid=sessionid,level="ERROR")
             return index(alert="Error. Cannot stop the server",sessionid=sessionid)
     else:
         return index(alert="Server stop is disabled or you lack permission",sessionid=sessionid)
@@ -125,7 +127,7 @@ def settings():
     path = request.args["path"]
 
     userconfig = LoadUserConfig(sessionid)
-
+    AddLog(action=f"Settings opened",sessionid=sessionid,level="INFO")
     return render_template("settings.html", sessionid=sessionid, alert="", path=path, \
     overwritefile=userconfig["overwritefile"],allowdelete=userconfig["allowdelete"] )
 
@@ -148,6 +150,7 @@ def savesettings():
     username = GetUsername(sessionid)
     with open(f"{config.defaultdir}/{username}/systemfiles/{username}.config.json", "w") as userconfig:
         json.dump(configdata,userconfig)
+    AddLog(action=f"Settigs saved",sessionid=sessionid,level="INFO")
     return render_template("settings.html", sessionid=sessionid, \
     alert="Settings saved", path=path, allowdelete=allowdelete, overwritefile=overwritefile)
 
@@ -164,21 +167,24 @@ def addfolder():
     path = request.args["path"]
 
     if not checkpath(sessionid,path):
-        return index(sessionid=sessionid,path=config.defaultdir + "/" + username,\
-        alert = "You are not allowed to access the directory")
+        return index(sessionid=sessionid,alert = "You are not allowed to access the directory")
     
     name = request.args["foldername"]
     fullpath = os.path.join(path, name)
     if os.path.exists(fullpath):
         if os.path.isdir(fullpath):
+            AddLog(action=f"This folder already exists : {fullpath}",sessionid=sessionid,level="WARNING")
             return index(alert="This folder already exists!",path=path,sessionid=sessionid)
         else:
+            AddLog(action=f"File with the same name exists : {fullpath}",sessionid=sessionid,level="WARNING")
             return index(alert="File with the same name already exists!",path=path,sessionid=sessionid)
     else:
         try:
             os.mkdir(fullpath)
-        except e:
-            return index(alert=e.message,path=path,sessionid=sessionid)
+            AddLog(action=f"Created directory : {fullpath}",sessionid=sessionid,level="INFO")
+        except:
+            AddLog(action=f"Cannot create a folder",sessionid=sessionid,level="ERROR")
+            return index(alert="Cannot create the folder",path=path,sessionid=sessionid)
         return index(path=path,sessionid=sessionid)
 
     
@@ -194,8 +200,7 @@ def download():
     path = request.args["path"]
 
     if not checkpath(sessionid,path):
-        return index(sessionid=sessionid,path=config.defaultdir + "/" + username,\
-        alert = "You are not allowed to access the directory")
+        return index(sessionid=sessionid, alert = "You are not allowed to access the directory")
 
     asattachment = request.args["attachment"]
     print(asattachment)
@@ -214,14 +219,13 @@ def upload():
     else:
         sessionid = request.form["sessionid"]
     if not checksession(sessionid):
-            return render_template("login.html",\
-            alert="Session id does not exist or is expired, please login again")
+        return render_template("login.html",\
+        alert="Session id does not exist or is expired, please login again")
     
     path = request.form["path"]
 
     if not checkpath(sessionid,path):
-        return index(sessionid=sessionid,path=config.defaultdir + "/" + username,\
-        alert = "You are not allowed to access the directory")
+        return index(sessionid=sessionid,alert = "You are not allowed to access the directory")
 
     if 'file' not in request.files:
         return index(alert = "No file sent.", sessionid=sessionid, path=path)
@@ -312,9 +316,6 @@ def deletedir():
     else:
         AddLog(action="Folder does not exist : " + fullpath ,level='WARNING',sessionid=sessionid)
         return index(alert="Folder does not exist",path=path,sessionid=sessionid)
-
-    AddLog(action="Cannot delete the folder : " + fullpath ,level='ERROR',sessionid=sessionid)
-    return index(alert="Cannot delete the folder",path=path,sessionid=sessionid)
     
     
 
@@ -389,6 +390,7 @@ def createuser():
     userpath = config.defaultdir + "/" + username
     shutil.copytree("./userblueprint",userpath)
     os.rename(userpath+"/systemfiles/username.config.json",userpath+"/systemfiles/" + username +".config.json")
+    AddLog(action=f"Account created",username=username,level="INFO")
     return render_template("login.html",alert="Account was created, please login")
 
 @app.route("/loadlogs")
@@ -404,6 +406,7 @@ def loadlogs():
     with open(f"{config.defaultdir}/{username}/systemfiles/userlogs.log","r") as logs:
         userlogs = [line.strip() for line in logs.readlines()]
         userlogs.reverse()
+        AddLog(action="Logs opened",sessionid=sessionid,level="INFO")
         return render_template("logs.html",sessionid=sessionid,path=path,userlogs=userlogs)
 
 
@@ -449,7 +452,10 @@ def GetUsername(sessionid):
 
 def printip():
     print("----")
-    print(request.environ['HTTP_X_FORWARDED_FOR']) # public client ip
+    try:
+        print(request.environ['HTTP_X_FORWARDED_FOR']) # public client ip
+    except:
+        print("error")
     print("----")
 
 def LoadUserConfig(sessionid):
@@ -465,17 +471,20 @@ def IsUserAdmin(sessionid):
         adminperms = perms.execute("select admin from adminpermission where username=:username",{"username":username}).fetchall()[0][0]
     return adminperms
 
-def AddLog(sessionid=None, action="", level=None):
-    if sessionid == None:
+def AddLog(sessionid=None, action="", level=None,username=None):
+    if sessionid == None and username== None:
         logger = SetupLogger("server")
-    else:
+    elif username==None:
         username = GetUsername(sessionid)
         logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
-    if level == None or level == 'INFO':
-        logger.info(action)
-    elif level == 'WARNING':
+    else:
+        logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
+    
+    if level == 'WARNING':
         logger.warning(action)
     elif level == 'ERROR':
         logger.error(action)
+    else:
+        logger.info(action)
 
 
