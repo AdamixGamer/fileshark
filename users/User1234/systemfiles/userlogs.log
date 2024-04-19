@@ -1,0 +1,9 @@
+INFO:User1234: User login : Date: 2024-04-19 16:29:14,976 : IP : 83.27.114.67
+INFO:User1234: Loaded directory : ./users/User1234 : Date: 2024-04-19 16:29:14,979 : IP : 83.27.114.67
+INFO:User1234: Logs opened : Date: 2024-04-19 16:29:17,127 : IP : 83.27.114.67
+INFO:User1234: Loaded directory : /workspace/fileshark/users/User1234 : Date: 2024-04-19 16:29:18,462 : IP : 83.27.114.67
+WARNING:User1234: You cannot access the directory : Date: 2024-04-19 16:29:20,887 : IP : 83.27.114.67
+INFO:User1234: Loaded directory : ./users/User1234 : Date: 2024-04-19 16:29:20,888 : IP : 83.27.114.67
+WARNING:User1234: You cannot access the directory : Date: 2024-04-19 16:29:24,105 : IP : 83.27.114.67
+INFO:User1234: Loaded directory : ./users/User1234 : Date: 2024-04-19 16:29:24,108 : IP : 83.27.114.67
+INFO:User1234: Logout : Date: 2024-04-19 16:29:32,978 : IP : 83.27.114.67
