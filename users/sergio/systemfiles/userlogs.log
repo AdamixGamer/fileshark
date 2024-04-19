@@ -1,0 +1,34 @@
+INFO:sergio: User login : Date: 2024-04-19 15:25:48,556
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-04-19 15:25:48,558
+INFO:sergio: File downloaded : ./users/sergio/Nowy_dokument_tekstowy1.txt : Date: 2024-04-19 15:25:50,992
+INFO:sergio: Deleted : ./users/sergio/Nowy_dokument_tekstowy1.txt : Date: 2024-04-19 15:25:52,541
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:25:52,544
+INFO:sergio: Logs opened : Date: 2024-04-19 15:26:15,824
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:26:27,433
+INFO:sergio: Logs opened : Date: 2024-04-19 15:27:00,336
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:27:02,261
+INFO:sergio: Logs opened : Date: 2024-04-19 15:28:23,831
+INFO:sergio: Logout : Date: 2024-04-19 15:28:28,746
+INFO:sergio: User login : Date: 2024-04-19 15:28:33,205
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-04-19 15:28:33,207
+INFO:sergio: Logout : Date: 2024-04-19 15:37:37,187
+INFO:sergio: User login : Date: 2024-04-19 15:37:42,049
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-04-19 15:37:42,050
+INFO:sergio: Logs opened : Date: 2024-04-19 15:37:43,856
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:37:46,313
+INFO:sergio: Logout : Date: 2024-04-19 15:38:16,555
+INFO:sergio: User login : Date: 2024-04-19 15:38:23,190
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-04-19 15:38:23,191
+INFO:sergio: Logs opened : Date: 2024-04-19 15:38:24,308
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:47:42,673
+WARNING:sergio: You cannot access the directory : Date: 2024-04-19 15:47:44,724
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-04-19 15:47:44,724
+INFO:sergio: Logs opened : Date: 2024-04-19 15:47:47,073
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:47:48,626
+INFO:sergio: Created directory : /workspace/fileshark/users/sergio/test : Date: 2024-04-19 15:47:55,514
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:47:55,518
+INFO:sergio: Logs opened : Date: 2024-04-19 15:47:57,013
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:56:19,691
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-04-19 15:56:21,332
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:56:22,701
+INFO:sergio: Logs opened : Date: 2024-04-19 15:56:24,276

@@ -1,1 +1,17 @@
-INFO:server: Server stopped by adminuser : Date: 2024-04-12 22:28:12,879
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:56:19,691
+INFO:server:adminuser: Admin Logs opened : Date: 2024-04-19 15:56:20,019
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-04-19 15:56:21,332
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-19 15:56:22,701
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-19 15:56:24,094
+INFO:server:sergio: Logs opened : Date: 2024-04-19 15:56:24,276
+INFO:server:adminuser: Admin Logs opened : Date: 2024-04-19 15:56:25,027
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-19 15:56:33,508
+INFO:server:adminuser: Logs opened : Date: 2024-04-19 15:58:36,783
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-19 15:58:38,548
+INFO:server:adminuser: Settings opened : Date: 2024-04-19 15:58:40,168
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-19 15:59:11,113
+INFO:server:adminuser: Logout : Date: 2024-04-19 16:00:22,634
+INFO:server:adminuser: User login : Date: 2024-04-19 16:00:28,269
+INFO:server:adminuser: Loaded directory : ./users/adminuser : Date: 2024-04-19 16:00:28,271
+INFO:server: Server stopped by adminuser : Date: 2024-04-19 16:00:30,141
+INFO:server:adminuser: Server stopped : Date: 2024-04-19 16:00:30,141

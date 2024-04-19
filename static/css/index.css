@@ -27,7 +27,7 @@ button:hover {
   transition: 0.2s;
 }
 
-input {
+input, .upload {
   background-color: #EEE0C9;
   border: none;
   color: black;
@@ -40,11 +40,19 @@ input {
   margin-right:2px;
   border-radius: 12px;
 }
-input:hover{
+input:hover, .upload:hover{
   transition: 0.2s;
   background-color: #ddd1bd;
+  
 }
 
+/* label.upload{
+  background-color: #EEE0C9;
+  border: none;
+  padding: 0px 16px;
+  border-radius: 12px;
+  color: black;
+} */
 h2 {
   text-align: left;
 }

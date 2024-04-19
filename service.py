@@ -13,10 +13,17 @@ import config
 
 
 def SetupLogger(name,filename="logs/serverlogs.log"):
+    logger = logging.getLogger(name)
+
     handler = logging.FileHandler(filename)
     handler.setFormatter(logging.Formatter('%(levelname)s:%(name)s: %(message)s : Date: %(asctime)s'))
-    logger = logging.getLogger(name)
     logger.addHandler(handler)
+
+    if filename != "logs/serverlogs.log":
+        handler = logging.FileHandler("logs/serverlogs.log")
+        handler.setFormatter(logging.Formatter('%(levelname)s:server:%(name)s: %(message)s : Date: %(asctime)s'))
+        logger.addHandler(handler)
+    
     logger.setLevel(logging.INFO)
     return logger
 
@@ -36,7 +43,6 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 # todo:
 # podgląd plików
 # wiecej ikon dla formatów plików
-# dostep wiekszej ilosci logow dla admina
 # edycja plików
 # lepszy css
 # light mode i dark mode ?
@@ -411,8 +417,24 @@ def loadlogs():
         AddLog(action="Logs opened",sessionid=sessionid,level="INFO")
         return render_template("logs.html",sessionid=sessionid,path=path,userlogs=userlogs)
 
+@app.route("/loadadminlogs")
+def loadadminlogs():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+            return render_template("login.html",alert="Session id does not exist, please login again")
+    if not IsUserAdmin(sessionid):
+        return index(alert="You lack permissions to access these logs.",sessionid=sessionid)
+    path = request.args["path"]
+    with open("./logs/serverlogs.log","r") as logs:
+        logs = [line.strip() for line in logs.readlines()]
+        logs.reverse()
+        AddLog(action="Admin Logs opened",sessionid=sessionid,level="INFO")
+        return render_template("logs.html",sessionid=sessionid,path=path,userlogs=logs)
 
-    
+
 def getuserpath(path):
     return path.split("users",1)[1]
 
@@ -473,14 +495,18 @@ def IsUserAdmin(sessionid):
         adminperms = perms.execute("select admin from adminpermission where username=:username",{"username":username}).fetchall()[0][0]
     return adminperms
 
+loggers = {"server": SetupLogger("server")}
 def AddLog(sessionid=None, action="", level=None,username=None):
-    if sessionid == None and username== None:
-        logger = SetupLogger("server")
-    elif username==None:
-        username = GetUsername(sessionid)
-        logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
-    else:
-        logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
+    logger = loggers["server"]
+
+    if sessionid != None:
+        if username==None:
+            username = GetUsername(sessionid)
+        if username in loggers.keys():
+            logger = loggers[username]
+        else:
+            logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
+            loggers[username] = logger
     
     if level == 'WARNING':
         logger.warning(action)
@@ -488,5 +514,4 @@ def AddLog(sessionid=None, action="", level=None,username=None):
         logger.error(action)
     else:
         logger.info(action)
-
 
