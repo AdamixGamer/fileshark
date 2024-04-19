@@ -12,16 +12,24 @@ import config
 
 
 
-def SetupLogger(name,filename="logs/serverlogs.log"):
+def SetupLogger(name,filename="logs/serverlogs.log",ip=None):
     logger = logging.getLogger(name)
 
     handler = logging.FileHandler(filename)
-    handler.setFormatter(logging.Formatter('%(levelname)s:%(name)s: %(message)s : Date: %(asctime)s'))
+    if ip==None:
+        formatter = '%(levelname)s:%(name)s: %(message)s : Date: %(asctime)s'
+    else:
+        formatter = '%(levelname)s:%(name)s: %(message)s : Date: %(asctime)s : IP : ' + ip
+    handler.setFormatter(logging.Formatter(formatter))
     logger.addHandler(handler)
 
     if filename != "logs/serverlogs.log":
         handler = logging.FileHandler("logs/serverlogs.log")
-        handler.setFormatter(logging.Formatter('%(levelname)s:server:%(name)s: %(message)s : Date: %(asctime)s'))
+        if ip==None:
+            formatter = '%(levelname)s:server:%(name)s: %(message)s : Date: %(asctime)s'
+        else:
+            formatter = '%(levelname)s:server:%(name)s: %(message)s : Date: %(asctime)s : IP : ' + ip
+        handler.setFormatter(logging.Formatter(formatter))
         logger.addHandler(handler)
     
     logger.setLevel(logging.INFO)
@@ -52,7 +60,6 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 @app.route("/")
 def index(alert = "", path="",sessionid=""):
-    printip()
     if sessionid=="": 
         if "sessionid" not in request.args:
             return render_template("login.html",alert="Please login to access the website")
@@ -60,10 +67,11 @@ def index(alert = "", path="",sessionid=""):
             sessionid = request.args["sessionid"]
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
-    if path=="":
-        path = config.defaultdir + "/" + GetUsername(sessionid)
     if "path" in request.args:
         path = os.path.realpath(request.args["path"])
+    elif path=="":
+        path = config.defaultdir + "/" + GetUsername(sessionid)
+
     username = GetUsername(sessionid)
     checkadminperms = IsUserAdmin(sessionid)
     if not checkadminperms:
@@ -93,7 +101,7 @@ def index(alert = "", path="",sessionid=""):
     if os.access(path + "/..", os.X_OK):
         username = GetUsername(sessionid)
         if not checkadminperms:
-            if path!=config.defaultdir + "/" + username:
+            if os.path.realpath(path)!=os.path.realpath(config.defaultdir + "/" + username):
                 dirs = [".."] + dirs
         else:
             dirs = [".."] + dirs
@@ -474,13 +482,11 @@ def GetUsername(sessionid):
         username = username.execute(f"select username from sessionid where sessionid=:sessionid",{"sessionid":sessionid}).fetchall()[0][0]
     return username
 
-def printip():
-    print("----")
-    try:
-        print(request.environ['HTTP_X_FORWARDED_FOR']) # public client ip
-    except:
-        print("error")
-    print("----")
+def GetIP():
+    if request.environ.get('HTTP_X_FORWARDED_FOR') is None:
+        return request.environ['REMOTE_ADDR']
+    else:
+        return request.environ['HTTP_X_FORWARDED_FOR']
 
 def LoadUserConfig(sessionid):
     username = GetUsername(sessionid)
@@ -505,7 +511,7 @@ def AddLog(sessionid=None, action="", level=None,username=None):
         if username in loggers.keys():
             logger = loggers[username]
         else:
-            logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log")
+            logger = SetupLogger(username,f"{config.defaultdir}/{username}/systemfiles/userlogs.log",ip=GetIP())
             loggers[username] = logger
     
     if level == 'WARNING':
