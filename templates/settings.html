@@ -24,10 +24,10 @@
   </div>
   <div>
     <label for="colormode">Choose theme</label>
-    <select id="colormode">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-      <option value="gray">Gray</option>
+    <select id="colormode" name="colormode">
+      <option value="light" {% if config['colormode']=='light' %} selected {%endif%} >Light</option>
+      <option value="dark" {% if config['colormode']=='dark' %} selected {%endif%}>Dark</option>
+      <option value="gray" {% if config['colormode']=='gray' %} selected {%endif%}>Gray</option>
     </select>
   </div>
 

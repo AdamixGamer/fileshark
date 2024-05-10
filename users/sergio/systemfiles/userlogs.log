@@ -9,3 +9,233 @@ INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-0
 INFO:sergio: Settings opened : Date: 2024-04-26 15:44:20,032 : IP : 46.205.206.193
 INFO:sergio: Settigs saved : Date: 2024-04-26 15:44:22,760 : IP : 46.205.206.193
 INFO:sergio: Settigs saved : Date: 2024-04-26 15:44:26,240 : IP : 46.205.206.193
+INFO:sergio: User login : Date: 2024-05-10 15:04:39,839 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 15:04:39,841 : IP : 46.205.205.109
+WARNING:sergio: This folder already exists : ./users/sergio/ : Date: 2024-05-10 15:04:45,868 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:04:45,870 : IP : 46.205.205.109
+WARNING:sergio: This folder already exists : /workspace/fileshark/users/sergio/ : Date: 2024-05-10 15:04:47,352 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:04:47,354 : IP : 46.205.205.109
+INFO:sergio: Logout : Date: 2024-05-10 15:04:52,322 : IP : 46.205.205.109
+INFO:sergio: User login : Date: 2024-05-10 15:05:10,999 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 15:05:11,001 : IP : 46.205.205.109
+INFO:sergio: Created directory : ./users/sergio/test : Date: 2024-05-10 15:05:16,901 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:05:16,904 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:05:19,034 : IP : 46.205.205.109
+INFO:sergio: File uploaded to : /workspace/fileshark/users/sergio/test/unzip-all.py : Date: 2024-05-10 15:06:08,722 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:06:08,723 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:17:14,921 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:18:19,256 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:18:22,602 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:21:49,857 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:21:52,161 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:21:56,510 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:22:14,179 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:22:18,141 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:22:54,611 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:22:55,397 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:22:57,045 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:23:00,023 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:23:04,342 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:23:13,574 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:23:15,289 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:23:32,859 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:23:35,618 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:23:37,950 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:23:43,218 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:24:00,759 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:24:06,066 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:24:09,653 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:25:04,089 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:25:07,305 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:28:20,625 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:29:03,270 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:29:07,555 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:29:09,286 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:29:16,554 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:29:23,300 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:29:29,800 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:29:34,368 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:29:37,747 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:29:43,067 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:29:44,365 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:30:44,673 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:30:48,734 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:30:51,917 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:30:54,445 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:30:57,510 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:31:00,445 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:31:05,486 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:31:09,861 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:32:14,522 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:32:18,938 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:32:22,014 : IP : 46.205.205.109
+INFO:sergio: Settings opened : Date: 2024-05-10 15:32:24,481 : IP : 46.205.205.109
+INFO:sergio: Settigs saved : Date: 2024-05-10 15:33:02,354 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:33:17,427 : IP : 46.205.205.109
+INFO:sergio: File downloaded : /workspace/fileshark/users/sergio/test/unzip-all.py : Date: 2024-05-10 15:33:25,845 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:34:53,758 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:34:54,454 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:34:54,676 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:34:54,844 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:34:55,009 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:35:16,734 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:35:41,634 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:00,511 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:02,642 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:13,274 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:14,355 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:48,703 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:36:50,418 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:37:06,623 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:37:07,410 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:37:27,943 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:37:53,334 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:38:16,282 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:38:33,766 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:38:34,777 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:38:52,219 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:39:15,323 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:40:19,470 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:40:20,213 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:40:20,413 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:40:20,605 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:40:29,655 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:41:02,494 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:41:03,750 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:41:17,387 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:41:18,263 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:41:27,315 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:42:45,568 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:42:46,691 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:43:27,375 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:43:38,546 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:44:06,858 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:44:31,611 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:17,607 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:45:19,254 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:29,942 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:31,230 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:32,842 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:33,722 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:45:34,518 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:46:13,587 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:46:19,603 : IP : 46.205.205.109
+INFO:sergio: File uploaded to : /workspace/fileshark/users/sergio/test/dirs_rename.py : Date: 2024-05-10 15:46:27,847 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:46:27,849 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:08,911 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 15:47:14,898 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:16,114 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:22,674 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:29,534 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:43,475 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:47:52,534 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:17,262 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:18,250 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:27,678 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:28,494 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:29,052 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:47,667 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:48,358 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:48,576 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:49,266 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:48:54,094 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:49:02,578 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:49:08,607 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:49:09,258 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:49:19,115 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:49:28,046 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:50:47,912 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:51:23,566 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:52:28,572 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:52:46,814 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:53:28,364 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:53:44,618 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:53:56,294 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:53:57,150 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:54:39,562 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:54:50,859 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:55:19,281 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:55:34,490 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:55:59,374 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:08,463 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:26,035 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:26,842 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:27,446 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:49,146 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:49,793 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:54,810 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:56:55,466 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:57:00,010 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:57:00,525 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:57:01,315 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:57:45,103 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:57:54,010 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:58:12,394 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:58:13,855 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:58:20,946 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:58:46,370 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:59:00,003 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:59:01,287 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:59:10,418 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 15:59:22,862 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:00:47,406 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:01:09,676 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 16:01:54,348 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:01:55,379 : IP : 46.205.205.109
+INFO:sergio: File downloaded : /workspace/fileshark/users/sergio/test/unzip-all.py : Date: 2024-05-10 16:02:22,447 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:11:08,028 : IP : 46.205.205.109
+INFO:sergio: File downloaded : /workspace/fileshark/users/sergio/test/unzip-all.py : Date: 2024-05-10 16:11:10,143 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 16:28:44,652 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:28:46,480 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:28:56,892 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:30:41,970 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:33:03,778 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:39:09,448 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:39:16,737 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:39:24,585 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:40:28,743 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:44:44,514 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:44:51,119 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:45:27,930 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:45:49,055 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:46:18,391 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:46:35,795 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:46:45,915 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:46:54,439 : IP : 46.205.205.109
+INFO:sergio: Logout : Date: 2024-05-10 16:47:09,668 : IP : 46.205.205.109
+INFO:sergio: User login : Date: 2024-05-10 16:48:26,381 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 16:48:26,383 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:28,516 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:39,524 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:40,555 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:41,231 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:41,886 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:44,050 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:48:44,649 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:50:16,789 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:50:17,915 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:50:18,571 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:50:44,563 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:50:59,619 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:51:05,679 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:53:48,279 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:54:36,137 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:54:41,680 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:54:52,183 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-10 16:55:01,340 : IP : 46.205.205.109
+INFO:sergio: User login : Date: 2024-05-10 16:55:16,512 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 16:55:16,514 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:18,207 : IP : 46.205.205.109
+WARNING:sergio: You cannot access the directory : Date: 2024-05-10 16:55:25,963 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 16:55:25,964 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:30,311 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:33,451 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:45,811 : IP : 46.205.205.109
+INFO:sergio: Logout : Date: 2024-05-10 16:55:46,820 : IP : 46.205.205.109
+INFO:sergio: User login : Date: 2024-05-10 16:55:52,283 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : ./users/sergio : Date: 2024-05-10 16:55:52,285 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:53,903 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:55:58,779 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:56:02,544 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:56:07,847 : IP : 46.205.205.109
+INFO:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-10 16:56:12,948 : IP : 46.205.205.109

@@ -2,8 +2,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {%if config["colormode"]%}
+    {%if config["colormode"]=="dark"%}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/dark.css') }}" />
+    {%elif config["colormode"]=="light"%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/light.css') }}" />
+    {%elif config["colormode"]=="gray"%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/gray.css') }}" />
     {%else%}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/light.css') }}" />
     {%endif%}
@@ -11,10 +15,12 @@
     {%block head%}
     {%endblock%}
 
-    {% if alert != "" %}
+    {% if alert is defined %}
+        {% if alert != "" %}
     <script>
         alert("{{alert}}");
     </script>
+        {%endif%}
     {%endif%}
 </head>
 

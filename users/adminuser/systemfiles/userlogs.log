@@ -126,3 +126,186 @@ INFO:adminuser: Settings opened : Date: 2024-04-26 16:42:09,781 : IP : 83.27.144
 INFO:adminuser: Settigs saved : Date: 2024-04-26 16:42:12,361 : IP : 83.27.144.65
 INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:42:15,340 : IP : 83.27.144.65
 INFO:adminuser: Logout : Date: 2024-04-26 16:42:39,341 : IP : 83.27.144.65
+INFO:adminuser: User login : Date: 2024-05-10 14:39:17,882 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-10 14:39:17,884 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 14:39:21,210 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:39:24,810 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 14:39:38,534 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 14:40:33,617 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:40:36,099 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:40:43,948 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:40:56,354 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:41:34,322 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:41:38,753 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 14:42:42,454 : IP : 83.27.113.57
+INFO:adminuser: Admin Logs opened : Date: 2024-05-10 14:47:35,997 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 14:47:47,951 : IP : 83.27.113.57
+INFO:adminuser: Logs opened : Date: 2024-05-10 14:48:01,100 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 14:48:08,456 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 14:48:12,673 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 14:48:17,276 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:04:52,629 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 15:04:55,237 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:04:57,655 : IP : 83.27.113.57
+INFO:adminuser: Created directory : /workspace/fileshark/users/adminuser/witam : Date: 2024-05-10 15:05:04,849 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:05:04,850 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser/witam : Date: 2024-05-10 15:05:06,731 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:05:11,180 : IP : 83.27.113.57
+INFO:adminuser: File uploaded to : /workspace/fileshark/users/adminuser/cos1.py : Date: 2024-05-10 15:06:03,573 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:06:03,574 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 15:06:10,311 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:06:13,024 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:08:04,227 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:12:50,291 : IP : 83.27.113.57
+INFO:adminuser: Server stopped : Date: 2024-05-10 15:12:51,767 : IP : 83.27.113.57
+INFO:adminuser: Server stopped : Date: 2024-05-10 15:15:35,946 : IP : 83.27.113.57
+INFO:adminuser: Server stopped : Date: 2024-05-10 15:15:41,295 : IP : 83.27.113.57
+INFO:adminuser: User login : Date: 2024-05-10 15:15:58,421 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-10 15:15:58,423 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 15:16:18,926 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:18:20,822 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:22:55,923 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:23:35,509 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:24:04,408 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:24:08,871 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:01,093 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:04,336 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:09,344 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:14,413 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:18,060 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:29:31,488 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 15:29:34,935 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:29:58,224 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:30:03,168 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:30:39,774 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:30:43,402 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:30:55,733 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:32:06,446 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:32:10,511 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:32:14,962 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:32:18,054 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:32:55,931 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:33:02,761 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 15:33:13,680 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:33:15,451 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace : Date: 2024-05-10 15:33:16,364 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:33:19,960 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-10 15:33:25,381 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:33:26,643 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 15:34:37,085 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 15:34:39,445 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:34:41,996 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:35:43,673 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:36:53,323 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:37:48,809 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:39:25,575 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:40:18,632 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:40:20,229 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:42:56,982 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:43:22,892 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:44:08,051 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:45:11,249 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-10 15:45:43,149 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:45:57,118 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 15:46:00,645 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:46:03,128 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 15:46:07,243 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:46:11,042 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:47:22,380 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:47:28,654 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:47:33,153 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:47:46,422 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:48:20,639 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:48:42,307 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:48:50,585 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:48:58,526 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:49:03,426 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:49:09,539 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:49:31,105 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 15:49:39,298 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 15:49:58,303 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:49:59,491 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/userblueprint : Date: 2024-05-10 15:50:02,441 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 15:50:03,803 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-10 15:50:07,262 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:50:09,049 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:50:49,912 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:51:24,842 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:52:14,605 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-10 15:52:45,662 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:52:47,582 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:52:50,058 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:52:59,241 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:53:06,373 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:53:45,040 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:54:41,713 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:54:55,692 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:57:39,055 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:57:57,543 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:58:03,181 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:58:04,313 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:58:14,728 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:58:19,368 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:58:20,722 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 15:59:31,674 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:00:38,596 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:00:50,463 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:01:12,946 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:08:48,631 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:11:02,500 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:28:41,327 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:28:57,571 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-10 16:29:18,844 : IP : 83.27.113.57
+INFO:adminuser: File downloaded : /workspace/fileshark/README.md : Date: 2024-05-10 16:29:29,631 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:29:36,932 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:29:38,955 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:30:42,547 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:31:01,143 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:32:26,716 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:32:27,781 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-10 16:32:31,489 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:32:58,080 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:39:04,727 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:39:13,586 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:39:28,724 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:40:11,101 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:40:13,612 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:40:33,305 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:41:30,390 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:43:01,576 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 16:43:03,345 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 16:43:05,674 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:43:07,966 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:43:32,584 : IP : 83.27.113.57
+INFO:adminuser: Settings opened : Date: 2024-05-10 16:43:33,933 : IP : 83.27.113.57
+INFO:adminuser: Settigs saved : Date: 2024-05-10 16:43:37,668 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:43:41,019 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:43:46,765 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:44:50,798 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:45:20,569 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:45:22,621 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:45:25,130 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:45:43,886 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:46:45,953 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:47:54,024 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:47:59,076 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:48:25,998 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:48:45,904 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:50:48,950 : IP : 83.27.113.57
+INFO:adminuser: Logs opened : Date: 2024-05-10 16:50:55,279 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:51:01,223 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:53:52,157 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:54:08,274 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:54:11,800 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:55:20,062 : IP : 83.27.113.57
+INFO:adminuser: User login : Date: 2024-05-10 16:55:30,603 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-10 16:55:30,604 : IP : 83.27.113.57
+INFO:adminuser: Logout : Date: 2024-05-10 16:55:32,748 : IP : 83.27.113.57
+INFO:adminuser: User login : Date: 2024-05-10 16:55:41,999 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-10 16:55:42,000 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:56:06,966 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:56:10,278 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-05-10 16:56:21,525 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-10 16:57:43,763 : IP : 83.27.113.57
+INFO:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:57:46,880 : IP : 83.27.113.57
+INFO:adminuser: Server stopped : Date: 2024-05-10 17:01:02,246 : IP : 83.27.113.57

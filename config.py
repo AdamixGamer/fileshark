@@ -37,3 +37,10 @@ fileicons = [
     "unknown"
     ]
 
+txtfiles = [
+    "txt",
+    "py",
+    "rs",
+    "json",
+    "md",
+]

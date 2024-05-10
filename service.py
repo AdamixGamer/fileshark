@@ -44,11 +44,9 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
 # todo:
-# podgląd plików
+# podgląd obrazków
 # wiecej ikon dla formatów plików
-# edycja plików
 # lepszy css
-# light mode i dark mode ?
 
 # https://www.w3schools.com/sql/sql_foreignkey.asp
 
@@ -80,7 +78,6 @@ def index(alert = "", path="",sessionid=""):
     else:
         userpath = path
 
-    #print(userpath)
     listed = os.listdir(path)
 
     noextensionfiles = [file for file in listed if not os.path.isdir(os.path.join(path, file))]
@@ -104,7 +101,7 @@ def index(alert = "", path="",sessionid=""):
     AddLog(action=f"Loaded directory : {path}",sessionid=sessionid,level="INFO")
     return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,\
     fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,\
-    config=LoadUserConfig(sessionid), adminperms = IsUserAdmin(sessionid))
+    config=LoadUserConfig(sessionid), adminperms = IsUserAdmin(sessionid), txtfiles=config.txtfiles)
 
 @app.route("/serverstop")
 def serverstop():
@@ -150,11 +147,10 @@ def savesettings():
     if not checksession(sessionid):
             return render_template("login.html",alert="Session id does not exist, please login again")
     path = request.args["path"]
-
     configdata = {
         "allowdelete": ("allowdelete" in request.args),
         "overwritefile": ("overwritefile" in request.args),
-        "colormode": (request.form.get('colormode'))
+        "colormode": (request.args['colormode'])
     }
     username = GetUsername(sessionid)
     with open(f"{config.defaultdir}/{username}/systemfiles/{username}.config.json", "w") as userconfig:
@@ -219,6 +215,51 @@ def download():
     except:
         AddLog(action="Cannot download the file",sessionid=sessionid,level="WARNING")
         return index("Error. File cannot be downloaded or opened")
+
+@app.route('/textfileopen')
+def textfileopen():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+        return render_template("login.html",\
+        alert="Session id does not exist or is expired, please login again")
+    
+    path = request.args["path"]
+
+    if not checkpath(sessionid,path):
+        return index(sessionid=sessionid,alert = "You are not allowed to access the directory")
+
+    file = request.args["file"]
+    filepath = os.path.join(path,file)
+
+    with open(filepath, "r") as text:
+        content = text.read()
+        return render_template("edittxt.html",content=content,path=path,
+        file=file,sessionid=sessionid,config=LoadUserConfig(sessionid))
+
+@app.route('/textfilesave')
+def textfilesave():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+        return render_template("login.html",\
+        alert="Session id does not exist or is expired, please login again")
+    
+    path = request.args["path"]
+
+    if not checkpath(sessionid,path):
+        return index(sessionid=sessionid,alert = "You are not allowed to access the directory")
+
+    file = request.args["file"]
+    filepath = os.path.join(path,file)
+    content = request.args["content"]
+    with open(filepath, "w") as text:
+        text.write(content)
+        return index(path=path,sessionid=sessionid)
 
 
 @app.route('/upload', methods=['POST'])
@@ -359,7 +400,7 @@ def logout():
     return render_template("login.html",alert="")
 
 
-@app.route("/loadusercreate") #not final
+@app.route("/loadusercreate")
 def loadusercreate():
     return render_template("createuser.html")
 
