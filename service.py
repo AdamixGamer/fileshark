@@ -41,12 +41,7 @@ logging.basicConfig(filename='logs/global.log', level=logging.INFO)
 app = Flask(__name__)
 app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
-# done:
-# foldery uzytkownika (kopiowanie /userblueprint)
-# config uzytkownika
-# ustawienia uzytkownika
-# permisje folderow uzytkownika
-# administrator
+
 
 # todo:
 # podgląd plików
@@ -109,7 +104,7 @@ def index(alert = "", path="",sessionid=""):
     AddLog(action=f"Loaded directory : {path}",sessionid=sessionid,level="INFO")
     return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,\
     fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,\
-    enabledelete=LoadUserConfig(sessionid)["allowdelete"], adminperms = IsUserAdmin(sessionid))
+    config=LoadUserConfig(sessionid), adminperms = IsUserAdmin(sessionid))
 
 @app.route("/serverstop")
 def serverstop():
@@ -144,8 +139,7 @@ def settings():
 
     userconfig = LoadUserConfig(sessionid)
     AddLog(action=f"Settings opened",sessionid=sessionid,level="INFO")
-    return render_template("settings.html", sessionid=sessionid, alert="", path=path, \
-    overwritefile=userconfig["overwritefile"],allowdelete=userconfig["allowdelete"] )
+    return render_template("settings.html", sessionid=sessionid, alert="", path=path,config=userconfig )
 
 @app.route("/settings/save")
 def savesettings():
@@ -157,18 +151,17 @@ def savesettings():
             return render_template("login.html",alert="Session id does not exist, please login again")
     path = request.args["path"]
 
-    allowdelete = "allowdelete" in request.args
-    overwritefile = "overwritefile" in request.args
     configdata = {
-        "allowdelete": allowdelete,
-        "overwritefile": overwritefile
+        "allowdelete": ("allowdelete" in request.args),
+        "overwritefile": ("overwritefile" in request.args),
+        "colormode": (request.form.get('colormode'))
     }
     username = GetUsername(sessionid)
     with open(f"{config.defaultdir}/{username}/systemfiles/{username}.config.json", "w") as userconfig:
         json.dump(configdata,userconfig)
     AddLog(action=f"Settigs saved",sessionid=sessionid,level="INFO")
-    return render_template("settings.html", sessionid=sessionid, \
-    alert="Settings saved", path=path, allowdelete=allowdelete, overwritefile=overwritefile)
+    return render_template("settings.html", sessionid=sessionid,
+    alert="Settings saved", path=path, config=configdata)
 
 
 
@@ -423,7 +416,7 @@ def loadlogs():
         userlogs = [line.strip() for line in logs.readlines()]
         userlogs.reverse()
         AddLog(action="Logs opened",sessionid=sessionid,level="INFO")
-        return render_template("logs.html",sessionid=sessionid,path=path,userlogs=userlogs)
+        return render_template("logs.html",sessionid=sessionid,path=path,userlogs=userlogs,config=LoadUserConfig(sessionid))
 
 @app.route("/loadadminlogs")
 def loadadminlogs():

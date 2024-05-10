@@ -1,9 +1,14 @@
-<html>
-  <head>
+{% extends "template.html" %}
+
+{%block head%}
+
     <link rel="stylesheet" href="{{ url_for('static', filename='css/logs.css') }}">
     <title>Logs</title>
-  </head>
-  <body>
+
+{%endblock%}
+
+{%block body%}
+
     <form action="{{url_for('index')}}">
       <input
         type="hidden"
@@ -25,5 +30,6 @@
         {%endif%}
     {%endfor%}
   </div>
-  </body>
-</html>
+
+{%endblock%}
+

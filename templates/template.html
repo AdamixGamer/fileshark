@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%if config["colormode"]%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/dark.css') }}" />
+    {%else%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/colormodes/light.css') }}" />
+    {%endif%}
+
+    {%block head%}
+    {%endblock%}
+
+    {% if alert != "" %}
+    <script>
+        alert("{{alert}}");
+    </script>
+    {%endif%}
+</head>
+
+<body>
+    {% block body %}
+    {%endblock%}
+</body>
+
+</html>

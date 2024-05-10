@@ -199,3 +199,981 @@ INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 16:37:42] "[36mGET /static/icon/dir.pn
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 16:37:42] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
 INFO:server:Server stopped by adminuser
 INFO:adminuser:Server stopped
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:00:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:00:43] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:00:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:18] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:sergio:User login
+INFO:sergio:Loaded directory : ./users/sergio
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:32] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:32] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:32] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:sergio:Loaded directory : /workspace/fileshark/users/sergio/test
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:34] "GET /?path=./users/sergio/test&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:34] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:sergio:Loaded directory : /workspace/fileshark/users/sergio
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:35] "GET /?path=/workspace/fileshark/users/sergio/test/..&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:35] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:35] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:sergio:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:37] "GET /loadlogs?sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346&path=/workspace/fileshark/users/sergio HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:37] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:User login
+INFO:adminuser:Loaded directory : ./users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:45] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:45] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:45] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:45] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:47] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=./users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:01:47] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:04] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=./users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:04] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:04] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Admin Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:05] "GET /loadadminlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:05] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:sergio:Loaded directory : /workspace/fileshark/users/sergio
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:15] "GET /?sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346&path=/workspace/fileshark/users/sergio HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:15] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:02:15] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:13] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:14] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:14] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:15] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:15] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:19] "[35m[1mGET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:20] "GET /settings/save?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:20] "GET /settings/save?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:11:20] "GET /settings/save?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:13:12] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:13:12] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:13:16] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:13:16] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:15:28] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:15:28] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:16:31] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:16:32] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:17:14] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:17:14] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:33] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:33] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:40] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:40] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:43] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:44] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:55] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:18:56] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:19:00] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:19:00] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:28] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:29] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:32] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:32] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:36] "GET /settings/save?allowdelete=True&overwritefile=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:36] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:39] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:39] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:43] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:44] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:21:44] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:22:08] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:22:08] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:19] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:19] "[33mGET /static/css/colormode/light.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:19] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:21] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:22] "[33mGET /static/css/colormode/dark.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:22] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:31] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:31] "[33mGET /static/css/colormode/dark.css HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:35] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:35] "[33mGET /static/css/colormode/light.css HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:52] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:52] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:55] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:30:56] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:05] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:05] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:05] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:07] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:08] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:08] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:12] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:12] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:12] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:12] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:15] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:15] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:15] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:18] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:18] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:18] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:20] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:21] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:21] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:21] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:22] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:23] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:24] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:24] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:24] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:24] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:25] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:25] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:31:25] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:06] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:06] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:06] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:06] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:08] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:08] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:08] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:16] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:16] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:16] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:19] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:19] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:19] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:21] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:21] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:21] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:51] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:51] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:51] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:52] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:52] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:33:52] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:13] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:13] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:13] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:19] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:20] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:20] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:20] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:20] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:21] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:21] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:23] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:23] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:23] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:36] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:36] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:36] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:36] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:37] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:37] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:38] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:39] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:39] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:39] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:40] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:34:40] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:58] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:58] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:58] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:58] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:59] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:59] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:35:59] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:36:01] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:36:01] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:36:01] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:sergio:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "GET /settings?path=/workspace/fileshark/users/sergio&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:33] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:34] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:34] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:34] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:35] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:35] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:41:35] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:07] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:08] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:08] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:08] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:sergio:Loaded directory : /workspace/fileshark/users/sergio
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:18] "GET /?sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346&path=/workspace/fileshark/users/sergio HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:18] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:18] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:sergio:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:20] "GET /settings?path=/workspace/fileshark/users/sergio&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:20] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:20] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:21] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:22] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:22] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:sergio:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:22] "GET /settings/save?allowdelete=True&colormode=True&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346&path=/workspace/fileshark/users/sergio HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:23] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:23] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:24] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:24] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:24] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:sergio:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:26] "GET /settings/save?allowdelete=True&sessionid=bfee02cf-b87f-4f12-a91e-c1ecb0cc4346&path=/workspace/fileshark/users/sergio HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:26] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:26] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:27] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:28] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:44:28] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:06] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:07] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:07] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:08] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:08] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:08] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:11] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:11] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:11] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:40] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:40] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:48:40] "GET /static/css/logs.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:49:19] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:49:19] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:49:19] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:49:19] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logs opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:50:05] "GET /loadlogs?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:50:05] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:50:05] "[36mGET /static/css/logs.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:51:38] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:51:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:51:38] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 15:51:38] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 133-457-722
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:22] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:22] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:22] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:24] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:24] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:24] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:27] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:27] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:27] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:27] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:01:27] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:04] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:04] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:04] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:07] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:07] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:07] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:10] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:11] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:11] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:14] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:14] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:14] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:16] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:17] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:17] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:17] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:19:17] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:31] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:31] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:31] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:32] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:32] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:35] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:35] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:35] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:38] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:38] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:38] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:40] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:40] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:40] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:40] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:49] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:50] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:50] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:52] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:52] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:52] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:56] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:56] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:56] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:56] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:23:56] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 926-125-882
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:12] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:12] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:12] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:13] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:14] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:14] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:14] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:56] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:56] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:56] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:58] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:59] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:27:59] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:01] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:01] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:01] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:01] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:01] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:09] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:10] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:10] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:10] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:10] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:21] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:21] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:21] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:21] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:28:21] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:29:55] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:29:56] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:29:56] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:29:56] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:29:56] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:07] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:07] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:07] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:07] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:20] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:20] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:20] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:30:20] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:09] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:09] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:09] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:11] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:12] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:12] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:15] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:15] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:15] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:28] "GET /settings/save?allowdelete=True&colormode=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:28] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:28] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:51] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:51] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:51] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:31:51] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:13] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:14] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:14] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:14] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:49] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:49] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:49] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:49] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:49] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:50] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:51] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:51] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:32:51] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:20] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:20] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:20] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:20] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:27] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:27] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:27] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:27] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:46] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:46] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:46] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:46] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:33:46] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:01] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:01] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:01] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:01] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:01] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:33] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:33] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:33] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:33] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:35:33] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:09] "GET /settings?path=/workspace/fileshark/users/adminuser&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:09] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:09] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:12] "GET /settings/save?allowdelete=True&sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:12] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:12] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:adminuser:Loaded directory : /workspace/fileshark/users/adminuser
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:15] "GET /?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e&path=/workspace/fileshark/users/adminuser HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:15] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:15] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:15] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:15] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:adminuser:Logout
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:39] "GET /logout?sessionid=ac7257ff-04cf-4429-b7fe-284ff031a68e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:39] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:User login
+INFO:JanKowalski:Loaded directory : ./users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:41] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:42] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:42] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:42] "GET /static/icon/txt.png HTTP/1.1" 200 -
+WARNING:JanKowalski:This folder already exists : ./users/JanKowalski/
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:46] "GET /addfolder?foldername=&sessionid=1f4b07e6-0957-40ac-a6d6-7f4fdc6fdb2d&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:46] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:46] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:47] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+WARNING:JanKowalski:This folder already exists : /workspace/fileshark/users/JanKowalski/
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:48] "GET /addfolder?foldername=&sessionid=1f4b07e6-0957-40ac-a6d6-7f4fdc6fdb2d&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:48] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:51] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+WARNING:JanKowalski:This folder already exists : /workspace/fileshark/users/JanKowalski/
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:55] "GET /addfolder?foldername=&sessionid=1f4b07e6-0957-40ac-a6d6-7f4fdc6fdb2d&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:55] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:42:55] "GET /static/css/colormodes/light.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:01] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:JanKowalski:Logout
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:02] "GET /logout?sessionid=1f4b07e6-0957-40ac-a6d6-7f4fdc6fdb2d HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:02] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:JanKowalski:User login
+INFO:JanKowalski:Loaded directory : ./users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:05] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:05] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:05] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:05] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:06] "GET /settings?path=./users/JanKowalski&sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:07] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:07] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:08] "GET /settings/save?allowdelete=True&colormode=True&sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:08] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:08] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:51] "GET /settings/save?allowdelete=True&colormode=True&sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:51] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:51] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:43:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:13] "GET /settings/save?allowdelete=True&colormode=True&sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:13] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:13] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:47] "GET /?sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:48] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:48] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:59] "GET /?sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:59] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:59] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:44:59] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:45:20] "GET /?sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:45:20] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:45:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 16:45:20] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 106-519-166
+INFO:JanKowalski:Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:34:58] "[35m[1mGET /?sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:34:58] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:34:58] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:34:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:34:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:02] "GET /static/css/settings.css HTTP/1.1" 200 -
+INFO:JanKowalski:Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:06] "[35m[1mGET /?sessionid=33ac4294-1d97-4f11-8022-d6db9eb00607&path=./users/JanKowalski HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:06] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:06] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:11] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:JanKowalski:User login
+INFO:JanKowalski:Loaded directory : ./users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:16] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:16] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:35:16] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:User login
+INFO:JanKowalski:Loaded directory : ./users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:34] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:34] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:34] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:46] "GET /settings?path=./users/JanKowalski&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:46] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:46] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:49] "GET /settings/save?colormode=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:49] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:49] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:53] "GET /?sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=./users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:53] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:53] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:53] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:JanKowalski:Deleting is disabled in your settings
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:56] "GET /delete?file=hello.txt&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:56] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:56] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:57] "GET /settings?path=/workspace/fileshark/users/JanKowalski&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:58] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:37:58] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:00] "GET /settings/save?allowdelete=True&colormode=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:00] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:00] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:07] "GET /?sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:07] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:07] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:07] "GET /static/icon/txt.png HTTP/1.1" 200 -
+INFO:JanKowalski:Created directory : /workspace/fileshark/users/JanKowalski/test
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:16] "GET /addfolder?foldername=test&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:16] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:16] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:16] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Folder deleted : /workspace/fileshark/users/JanKowalski/test
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:17] "GET /deletedir?dir=test&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:17] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:17] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Created directory : /workspace/fileshark/users/JanKowalski/uu
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:25] "GET /addfolder?foldername=uu&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:25] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:25] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:25] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:38:25] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski/uu
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:44:21] "GET /?path=/workspace/fileshark/users/JanKowalski/uu&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:44:21] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:44:21] "GET /static/icon/dir.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:44:21] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:44:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:JanKowalski:This folder already exists : /workspace/fileshark/users/JanKowalski/uu
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:31] "GET /addfolder?foldername=uu&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:31] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:32] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:32] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski/uu
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:36] "GET /?path=/workspace/fileshark/users/JanKowalski/uu&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:36] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:36] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:41] "GET /?path=/workspace/fileshark/users/JanKowalski/uu/..&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:41] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:41] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:41] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:56] "GET /?path=/workspace/fileshark/users/JanKowalski/uu/..&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:56] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:56] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:56] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski/uu
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:58] "GET /?path=/workspace/fileshark/users/JanKowalski/uu&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:58] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:45:58] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Loaded directory : /workspace/fileshark/users/JanKowalski
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:46:00] "GET /?path=/workspace/fileshark/users/JanKowalski/uu/..&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:46:00] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:46:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:46:00] "[36mGET /static/icon/dir.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:46:00] "[36mGET /static/icon/txt.png HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:57:24] "GET /settings?path=/workspace/fileshark/users/JanKowalski&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:57:24] "GET /static/css/colormodes/dark.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:57:24] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 19:57:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:JanKowalski:Settings opened
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:45] "GET /settings?path=/workspace/fileshark/users/JanKowalski&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:45] "[36mGET /static/css/colormodes/dark.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:45] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:47] "GET /settings/save?allowdelete=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:47] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:09:47] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:10:00] "GET /settings/save?allowdelete=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:10:00] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:10:00] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 106-519-166
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 106-519-166
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 106-519-166
+INFO:werkzeug: * Detected change in '/workspace/fileshark/service.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 106-519-166
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:02] "GET /settings/save?allowdelete=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:02] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:02] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -
+INFO:JanKowalski:Settigs saved
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:05] "GET /settings/save?allowdelete=True&sessionid=87089eb2-f866-491e-a7ab-3c71ebf49ade&path=/workspace/fileshark/users/JanKowalski HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:05] "[36mGET /static/css/colormodes/light.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 20:11:05] "[36mGET /static/css/settings.css HTTP/1.1[0m" 304 -

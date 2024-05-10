@@ -1,0 +1,22 @@
+body {
+  background-color:  #948f94;
+  color: black;
+}
+.field {
+  color:#cdcdcd;
+  background-color: #4F4557;
+}
+button{
+  color:#cdcdcd;
+  background-color: #393646;
+}
+input, .upload {
+  color:#cdcdcd;
+  background-color: #6D5D6E;
+}
+button:hover {
+  background-color:#24222c;
+}
+input:hover, .upload:hover{
+  background-color: #564957;
+}

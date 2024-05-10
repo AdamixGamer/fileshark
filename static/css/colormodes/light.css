@@ -1,0 +1,19 @@
+  body {
+    background-color:  #F1F0E8;
+    color: black;
+  }
+  .field {
+    background-color: #ADC4CE;
+  }
+  button{
+    background-color: #96B6C5;
+  }
+  input, .upload {
+    background-color: #EEE0C9;
+  }
+  button:hover {
+    background-color:#829ca8;
+  }
+  input:hover, .upload:hover{
+    background-color: #ddd1bd;
+  }

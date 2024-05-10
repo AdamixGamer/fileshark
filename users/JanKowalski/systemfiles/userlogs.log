@@ -22,3 +22,55 @@ INFO:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-19 16:3
 INFO:JanKowalski: Logs opened : Date: 2024-04-19 16:37:20,333 : IP : 83.27.114.67
 INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-19 16:37:21,680 : IP : 83.27.114.67
 INFO:JanKowalski: Logout : Date: 2024-04-19 16:37:22,442 : IP : 83.27.114.67
+INFO:JanKowalski: User login : Date: 2024-04-26 16:42:41,912 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 16:42:41,914 : IP : 83.27.144.65
+WARNING:JanKowalski: This folder already exists : ./users/JanKowalski/ : Date: 2024-04-26 16:42:46,023 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:46,025 : IP : 83.27.144.65
+WARNING:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/ : Date: 2024-04-26 16:42:48,442 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:48,444 : IP : 83.27.144.65
+WARNING:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/ : Date: 2024-04-26 16:42:55,493 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:55,495 : IP : 83.27.144.65
+INFO:JanKowalski: Logout : Date: 2024-04-26 16:43:02,676 : IP : 83.27.144.65
+INFO:JanKowalski: User login : Date: 2024-04-26 16:43:05,493 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 16:43:05,495 : IP : 83.27.144.65
+INFO:JanKowalski: Settings opened : Date: 2024-04-26 16:43:06,827 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 16:43:08,652 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 16:43:51,344 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 16:44:13,466 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:44:47,905 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:44:59,124 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:45:20,244 : IP : 83.27.144.65
+INFO:JanKowalski: Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607 : Date: 2024-04-26 19:34:58,615 : IP : 83.27.144.65
+INFO:JanKowalski: Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607 : Date: 2024-04-26 19:35:06,375 : IP : 83.27.144.65
+INFO:JanKowalski: User login : Date: 2024-04-26 19:35:16,458 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 19:35:16,460 : IP : 83.27.144.65
+INFO:JanKowalski: User login : Date: 2024-04-26 19:37:34,751 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 19:37:34,753 : IP : 83.27.144.65
+INFO:JanKowalski: Settings opened : Date: 2024-04-26 19:37:46,310 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 19:37:49,322 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:37:53,768 : IP : 83.27.144.65
+INFO:JanKowalski: Deleting is disabled in your settings : Date: 2024-04-26 19:37:56,517 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:37:56,519 : IP : 83.27.144.65
+INFO:JanKowalski: Settings opened : Date: 2024-04-26 19:37:57,798 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 19:38:00,396 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:07,200 : IP : 83.27.144.65
+INFO:JanKowalski: Created directory : /workspace/fileshark/users/JanKowalski/test : Date: 2024-04-26 19:38:16,249 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:16,251 : IP : 83.27.144.65
+INFO:JanKowalski: Folder deleted : /workspace/fileshark/users/JanKowalski/test : Date: 2024-04-26 19:38:17,499 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:17,502 : IP : 83.27.144.65
+INFO:JanKowalski: Created directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:38:25,391 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:25,393 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:44:21,756 : IP : 83.27.144.65
+WARNING:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:31,025 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:31,026 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:36,662 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:41,633 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:56,080 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:58,499 : IP : 83.27.144.65
+INFO:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:46:00,531 : IP : 83.27.144.65
+INFO:JanKowalski: Settings opened : Date: 2024-04-26 19:57:24,010 : IP : 83.27.144.65
+INFO:JanKowalski: Settings opened : Date: 2024-04-26 20:09:45,071 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 20:09:47,352 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 20:10:00,412 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 20:11:02,096 : IP : 83.27.144.65
+INFO:JanKowalski: Settigs saved : Date: 2024-04-26 20:11:05,445 : IP : 83.27.144.65

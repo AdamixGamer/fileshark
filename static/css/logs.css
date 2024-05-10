@@ -1,7 +1,5 @@
 input {
-    background-color: #EEE0C9;
     border: none;
-    color: black;
     padding: 0px 16px;
     text-align: center;
     text-decoration: none;
@@ -19,8 +17,4 @@ input {
   }
   input:hover{
     transition: 0.2s;
-    background-color: #ddd1bd;
-  }
-  body {
-    background-color: #F1F0E8;
   }

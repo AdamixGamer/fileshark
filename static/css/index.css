@@ -1,5 +1,4 @@
 .field {
-  background-color: #ADC4CE;
   width: 100%;
   position: fixed;
   top: 0;
@@ -9,9 +8,7 @@
   flex-wrap: wrap;
 }
 button{
-  background-color: #96B6C5;
   border: none;
-  color: black;
   height: 100%;
   padding: 0px 16px;
   text-align: center;
@@ -23,14 +20,11 @@ button{
   border-radius: 12px;
 }
 button:hover {
-  background-color:rgb(130, 156, 168);
   transition: 0.2s;
 }
 
 input, .upload {
-  background-color: #EEE0C9;
   border: none;
-  color: black;
   padding: 0px 16px;
   text-align: center;
   text-decoration: none;
@@ -42,7 +36,6 @@ input, .upload {
 }
 input:hover, .upload:hover{
   transition: 0.2s;
-  background-color: #ddd1bd;
   
 }
 
@@ -63,5 +56,4 @@ h2 {
 
 body {
   margin: 0%;
-  background-color: #F1F0E8;
 }

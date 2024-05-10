@@ -1,0 +1,34 @@
+body {
+  background-color:   	#40444b;
+  color: white;
+}
+.field {
+  color:white;
+  background-color: #292b2f;
+}
+button{
+  color:white;
+  background-color: #202225;
+}
+input, .upload {
+  color:white;
+  background-color: #2f3136;
+}
+button:hover {
+  background-color:#101113;
+}
+input:hover, .upload:hover{
+  background-color: #222327;
+}
+/* https://www.color-hex.com/color-palette/114089 */
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}

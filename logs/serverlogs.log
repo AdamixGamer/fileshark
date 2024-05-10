@@ -47,3 +47,181 @@ INFO:server:adminuser: Admin Logs opened : Date: 2024-04-19 16:37:26,711 : IP : 
 INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-19 16:37:42,411 : IP : 83.27.114.67
 INFO:server: Server stopped by adminuser : Date: 2024-04-19 16:38:43,943
 INFO:server:adminuser: Server stopped : Date: 2024-04-19 16:38:43,944 : IP : 83.27.114.67
+INFO:server:sergio: User login : Date: 2024-04-26 15:01:32,371 : IP : 46.205.206.193
+INFO:server:sergio: Loaded directory : ./users/sergio : Date: 2024-04-26 15:01:32,373 : IP : 46.205.206.193
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-04-26 15:01:34,583 : IP : 46.205.206.193
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-26 15:01:35,809 : IP : 46.205.206.193
+INFO:server:sergio: Logs opened : Date: 2024-04-26 15:01:37,716 : IP : 46.205.206.193
+INFO:server:adminuser: User login : Date: 2024-04-26 15:01:45,075 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : ./users/adminuser : Date: 2024-04-26 15:01:45,077 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:01:47,081 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:02:04,376 : IP : 83.27.144.65
+INFO:server:adminuser: Admin Logs opened : Date: 2024-04-26 15:02:05,540 : IP : 83.27.144.65
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-26 15:02:15,702 : IP : 46.205.206.193
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:11:13,749 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:11:15,548 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:11:19,880 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:13:12,220 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:13:16,203 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:15:28,183 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:16:31,899 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:17:14,207 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:18:33,008 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:18:40,287 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:18:43,909 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:18:55,741 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:19:00,274 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:21:28,965 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:21:32,585 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:21:36,751 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:21:39,351 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:21:43,444 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:22:08,241 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:30:19,418 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:30:21,932 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:30:31,453 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:30:35,147 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:30:52,455 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:30:55,850 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:31:05,139 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:31:07,821 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:31:12,297 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:31:15,382 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:31:18,187 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:31:20,730 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:31:22,380 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:31:24,258 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:31:25,477 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:33:06,475 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:33:08,125 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:33:16,683 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:33:19,749 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:33:21,110 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:33:51,217 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:33:52,386 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:34:13,464 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:34:19,743 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:34:20,981 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:34:23,190 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:34:35,999 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:34:37,417 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:34:38,963 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:34:39,883 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:35:58,341 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:35:59,741 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:36:01,022 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:41:31,449 : IP : 83.27.144.65
+INFO:server:sergio: Settings opened : Date: 2024-04-26 15:41:31,519 : IP : 46.205.206.193
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:41:33,899 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:41:35,063 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:44:07,974 : IP : 83.27.144.65
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-04-26 15:44:18,385 : IP : 46.205.206.193
+INFO:server:sergio: Settings opened : Date: 2024-04-26 15:44:20,032 : IP : 46.205.206.193
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 15:44:21,987 : IP : 83.27.144.65
+INFO:server:sergio: Settigs saved : Date: 2024-04-26 15:44:22,760 : IP : 46.205.206.193
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:44:24,465 : IP : 83.27.144.65
+INFO:server:sergio: Settigs saved : Date: 2024-04-26 15:44:26,240 : IP : 46.205.206.193
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 15:44:27,979 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:48:06,835 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:48:08,345 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:48:11,180 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:48:40,442 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:49:19,287 : IP : 83.27.144.65
+INFO:server:adminuser: Logs opened : Date: 2024-04-26 15:50:05,055 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 15:51:38,242 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:01:09,446 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:01:22,576 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:01:24,225 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:01:27,305 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:19:04,245 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:19:07,135 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:19:10,816 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:19:14,174 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:19:16,830 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:23:31,790 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:23:35,608 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:23:38,369 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:23:40,571 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:23:49,909 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:23:52,504 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:23:56,324 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:27:07,098 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:27:12,024 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:27:13,968 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:27:56,547 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:27:58,855 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:28:01,608 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:28:09,870 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:28:21,367 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:29:55,815 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:30:07,356 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:30:20,686 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:31:09,073 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:31:11,952 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:31:15,372 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:31:28,161 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:31:51,082 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:32:13,880 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:32:49,469 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:32:50,881 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:33:20,288 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:33:27,644 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:33:46,089 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:35:01,609 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:35:33,705 : IP : 83.27.144.65
+INFO:server:adminuser: Settings opened : Date: 2024-04-26 16:42:09,781 : IP : 83.27.144.65
+INFO:server:adminuser: Settigs saved : Date: 2024-04-26 16:42:12,361 : IP : 83.27.144.65
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/adminuser : Date: 2024-04-26 16:42:15,340 : IP : 83.27.144.65
+INFO:server:adminuser: Logout : Date: 2024-04-26 16:42:39,341 : IP : 83.27.144.65
+INFO:server:JanKowalski: User login : Date: 2024-04-26 16:42:41,912 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 16:42:41,914 : IP : 83.27.144.65
+WARNING:server:JanKowalski: This folder already exists : ./users/JanKowalski/ : Date: 2024-04-26 16:42:46,023 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:46,025 : IP : 83.27.144.65
+WARNING:server:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/ : Date: 2024-04-26 16:42:48,442 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:48,444 : IP : 83.27.144.65
+WARNING:server:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/ : Date: 2024-04-26 16:42:55,493 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:42:55,495 : IP : 83.27.144.65
+INFO:server:JanKowalski: Logout : Date: 2024-04-26 16:43:02,676 : IP : 83.27.144.65
+INFO:server:JanKowalski: User login : Date: 2024-04-26 16:43:05,493 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 16:43:05,495 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settings opened : Date: 2024-04-26 16:43:06,827 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 16:43:08,652 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 16:43:51,344 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 16:44:13,466 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:44:47,905 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:44:59,124 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 16:45:20,244 : IP : 83.27.144.65
+INFO:server:JanKowalski: Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607 : Date: 2024-04-26 19:34:58,615 : IP : 83.27.144.65
+INFO:server:JanKowalski: Session expired for id : 33ac4294-1d97-4f11-8022-d6db9eb00607 : Date: 2024-04-26 19:35:06,375 : IP : 83.27.144.65
+INFO:server:JanKowalski: User login : Date: 2024-04-26 19:35:16,458 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 19:35:16,460 : IP : 83.27.144.65
+INFO:server:JanKowalski: User login : Date: 2024-04-26 19:37:34,751 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : ./users/JanKowalski : Date: 2024-04-26 19:37:34,753 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settings opened : Date: 2024-04-26 19:37:46,310 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 19:37:49,322 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:37:53,768 : IP : 83.27.144.65
+INFO:server:JanKowalski: Deleting is disabled in your settings : Date: 2024-04-26 19:37:56,517 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:37:56,519 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settings opened : Date: 2024-04-26 19:37:57,798 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 19:38:00,396 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:07,200 : IP : 83.27.144.65
+INFO:server:JanKowalski: Created directory : /workspace/fileshark/users/JanKowalski/test : Date: 2024-04-26 19:38:16,249 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:16,251 : IP : 83.27.144.65
+INFO:server:JanKowalski: Folder deleted : /workspace/fileshark/users/JanKowalski/test : Date: 2024-04-26 19:38:17,499 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:17,502 : IP : 83.27.144.65
+INFO:server:JanKowalski: Created directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:38:25,391 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:38:25,393 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:44:21,756 : IP : 83.27.144.65
+WARNING:server:JanKowalski: This folder already exists : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:31,025 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:31,026 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:36,662 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:41,633 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:45:56,080 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski/uu : Date: 2024-04-26 19:45:58,499 : IP : 83.27.144.65
+INFO:server:JanKowalski: Loaded directory : /workspace/fileshark/users/JanKowalski : Date: 2024-04-26 19:46:00,531 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settings opened : Date: 2024-04-26 19:57:24,010 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settings opened : Date: 2024-04-26 20:09:45,071 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 20:09:47,352 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 20:10:00,412 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 20:11:02,096 : IP : 83.27.144.65
+INFO:server:JanKowalski: Settigs saved : Date: 2024-04-26 20:11:05,445 : IP : 83.27.144.65
