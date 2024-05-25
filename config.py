@@ -44,3 +44,10 @@ txtfiles = [
     "json",
     "md",
 ]
+
+imagefiles = [
+    "png",
+    "jpg",
+    "jpeg",
+    "webp"
+]

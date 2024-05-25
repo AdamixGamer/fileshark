@@ -643,3 +643,93 @@ INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 202
 INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-10 16:57:46,880 : IP : 83.27.113.57
 INFO:server: Server stopped by adminuser : Date: 2024-05-10 17:01:02,246
 INFO:server:adminuser: Server stopped : Date: 2024-05-10 17:01:02,246 : IP : 83.27.113.57
+INFO:server:adminuser: User login : Date: 2024-05-17 15:15:51,729 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-17 15:15:51,731 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-17 15:15:56,169 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-17 15:15:57,277 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-17 15:16:02,397 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:16:04,858 : IP : 83.27.136.71
+WARNING:server: Failed login. Incorrect password : Date: 2024-05-17 15:16:43,736
+INFO:server:sergio: User login : Date: 2024-05-17 15:16:49,884 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : ./users/sergio : Date: 2024-05-17 15:16:49,886 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:16:51,557 : IP : 46.205.205.109
+INFO:server:adminuser: File uploaded to : /workspace/fileshark/testdata/testfiles/tapeta-planety-i-zachod-slonca-w-grafice.jpg : Date: 2024-05-17 15:16:51,620 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:16:51,622 : IP : 83.27.136.71
+INFO:server:sergio: File uploaded to : /workspace/fileshark/users/sergio/test/00600b3b-5c3c-4b67-ad25-a63173b73a2c.png : Date: 2024-05-17 15:17:02,063 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:17:02,064 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:17:20,235 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:19:16,215 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:19:47,623 : IP : 83.27.136.71
+INFO:server: Server stopped by adminuser : Date: 2024-05-17 15:19:50,436
+INFO:server:adminuser: Server stopped : Date: 2024-05-17 15:19:50,436 : IP : 83.27.136.71
+INFO:server:adminuser: User login : Date: 2024-05-17 15:20:04,008 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-17 15:20:04,010 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-17 15:20:05,596 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-17 15:20:06,509 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-17 15:20:11,536 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:20:13,241 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:22:52,545 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:23:47,762 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:26:00,633 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:26:01,472 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:26:08,255 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:26:14,496 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:26:21,107 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:26:25,141 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:26:27,124 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:27:14,930 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:28:42,185 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:28:43,520 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:29:10,651 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:30:47,516 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:33:31,636 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:34:28,149 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:36:25,811 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:37:22,401 : IP : 46.205.205.109
+INFO:server:adminuser: User login : Date: 2024-05-17 15:37:25,316 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : ./users/adminuser : Date: 2024-05-17 15:37:25,318 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-17 15:37:27,474 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-17 15:37:28,504 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-17 15:37:30,447 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:37:31,924 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:37:53,706 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:37:54,815 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:38:16,086 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:38:23,297 : IP : 83.27.136.71
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:39:19,078 : IP : 46.205.205.109
+INFO:server:sergio: Settings opened : Date: 2024-05-17 15:39:21,428 : IP : 46.205.205.109
+INFO:server:sergio: Settigs saved : Date: 2024-05-17 15:39:24,031 : IP : 46.205.205.109
+INFO:server:sergio: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:39:30,048 : IP : 46.205.205.109
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:40:24,269 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:40:44,903 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:41:06,996 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:41:26,536 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-17 15:41:28,276 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-17 15:41:29,511 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-17 15:41:36,140 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-17 15:41:38,086 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:41:39,799 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/sergio/test : Date: 2024-05-17 15:41:43,940 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users/sergio : Date: 2024-05-17 15:41:45,835 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/users : Date: 2024-05-17 15:41:46,886 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark : Date: 2024-05-17 15:41:48,256 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata : Date: 2024-05-17 15:41:49,966 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:41:51,088 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:42:06,622 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:43:15,943 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:44:50,845 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:45:59,362 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:50:18,004 : IP : 83.27.136.71
+INFO:server:adminuser: File downloaded : /workspace/fileshark/testdata/testfiles/bat.bat : Date: 2024-05-17 15:50:22,335 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:50:36,380 : IP : 83.27.136.71
+INFO:server:adminuser: File downloaded : /workspace/fileshark/testdata/testfiles/supertajnydokument.txt : Date: 2024-05-17 15:50:39,062 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 15:50:45,545 : IP : 83.27.136.71
+INFO:server:adminuser: Settings opened : Date: 2024-05-17 15:58:47,632 : IP : 83.27.136.71
+INFO:server:sergio: Settings opened : Date: 2024-05-17 15:59:15,204 : IP : 46.205.205.109
+INFO:server:adminuser: Settings opened : Date: 2024-05-17 15:59:40,355 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 16:01:13,989 : IP : 83.27.136.71
+INFO:server:adminuser: Settings opened : Date: 2024-05-17 16:01:15,542 : IP : 83.27.136.71
+INFO:server:adminuser: Settigs saved : Date: 2024-05-17 16:03:53,951 : IP : 83.27.136.71
+INFO:server:adminuser: Loaded directory : /workspace/fileshark/testdata/testfiles : Date: 2024-05-17 16:07:17,453 : IP : 83.27.136.71
+INFO:server: Server stopped by adminuser : Date: 2024-05-17 16:07:18,662
+INFO:server:adminuser: Server stopped : Date: 2024-05-17 16:07:18,663 : IP : 83.27.136.71

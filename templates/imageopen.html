@@ -9,14 +9,11 @@
 
 {%block body%}
 
-<form action="{{url_for('textfilesave')}}">
+    <a href="/image?filepath={{filepath}}" target="_blank"><img style="max-height: 90vh; max-width: 100vw;" src="/image?filepath={{filepath}}" /></a>
+<form action="{{url_for('index')}}">
     <input type="hidden" value="{{sessionid}}" id="sessionid" name="sessionid" />
     <input type="hidden" name="path" value="{{path}}" />
-    <input type="hidden" name="file" value="{{file}}" />
-    <textarea name="content">{{content}}</textarea>
-    <br/>
-    <input type="submit" value="Save" />
-    <input type="submit" value="Cancel" formaction="{{url_for('index')}}">
+    <input type="submit" value="Cancel">
 </form>
 
 {%endblock%}

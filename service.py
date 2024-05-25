@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for,send_from_directory
+from flask import Flask, render_template, request, redirect, url_for,send_from_directory,send_file
 import os, signal
 from werkzeug.utils import secure_filename
 import sqlite3
@@ -7,7 +7,7 @@ import uuid
 import shutil
 import json
 import logging
-
+import urllib.parse
 import config
 
 
@@ -44,7 +44,6 @@ app.jinja_env.add_extension('jinja2.ext.loopcontrols')
 
 
 # todo:
-# podgląd obrazków
 # wiecej ikon dla formatów plików
 # lepszy css
 
@@ -99,9 +98,10 @@ def index(alert = "", path="",sessionid=""):
             dirs = [".."] + dirs
 
     AddLog(action=f"Loaded directory : {path}",sessionid=sessionid,level="INFO")
-    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,\
-    fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,\
-    config=LoadUserConfig(sessionid), adminperms = IsUserAdmin(sessionid), txtfiles=config.txtfiles)
+    return render_template("index.html",path=path, files=files, dirs=dirs, sessionid=sessionid,
+    fileicons=config.fileicons,enableserverstop=config.enableserverstop,alert=alert,userpath=userpath,
+    config=LoadUserConfig(sessionid), adminperms = IsUserAdmin(sessionid), txtfiles=config.txtfiles, 
+    imagefiles = config.imagefiles)
 
 @app.route("/serverstop")
 def serverstop():
@@ -216,6 +216,33 @@ def download():
         AddLog(action="Cannot download the file",sessionid=sessionid,level="WARNING")
         return index("Error. File cannot be downloaded or opened")
 
+
+@app.route('/imagefileopen')
+def imagefileopen():
+    if "sessionid" not in request.args:
+        return render_template("login.html",alert="Please login to access the website")
+    else:
+        sessionid = request.args["sessionid"]
+    if not checksession(sessionid):
+        return render_template("login.html",\
+        alert="Session id does not exist or is expired, please login again")
+    
+    path = request.args["path"]
+
+    if not checkpath(sessionid,path):
+        return index(sessionid=sessionid,alert = "You are not allowed to access the directory")
+
+    file = request.args["file"]
+    filepath = os.path.join(path,file)
+    print('URL', urllib.parse.quote(filepath, safe=""))
+    return render_template('imageopen.html',filepath=urllib.parse.quote(filepath, safe=""),
+    sessionid=sessionid,path=path, config=LoadUserConfig(sessionid),file=file)
+
+@app.route('/image')
+def imageload():
+    filepath = request.args["filepath"]
+    return send_file(filepath)
+
 @app.route('/textfileopen')
 def textfileopen():
     if "sessionid" not in request.args:
@@ -283,7 +310,7 @@ def upload():
     if file.filename == '':
         AddLog(action="No file selected for the upload",sessionid=sessionid,level="WARNING")
         return index("No file selected", sessionid=sessionid, path=path)
-    if os.path.exists(f"{path}/{file.filename}"): #nie dziala
+    if os.path.exists(os.path.join(path,file.filename)):
         return index(path=path,sessionid=sessionid,alert="File already exists")
     filename = secure_filename(file.filename)
     file.save(os.path.join(path, filename))
